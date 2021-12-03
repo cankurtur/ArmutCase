@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="ArmutCase" customModuleProvider="target">
+            <connections>
+                <outlet property="headerImageView" destination="KOi-qy-kIb" id="iuR-mj-kZ8"/>
+                <outlet property="searchTextField" destination="jso-JD-g8h" id="RHK-Kg-mjm"/>
+                <outlet property="titleLabel" destination="4bN-65-B16" id="3vc-ti-p44"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="284" height="198"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aih-d3-4WV" userLabel="Holder View">
+                    <rect key="frame" x="0.0" y="0.0" width="284" height="198"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KOi-qy-kIb">
+                            <rect key="frame" x="0.0" y="0.0" width="284" height="198"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bN-65-B16">
+                            <rect key="frame" x="0.0" y="0.0" width="204" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="GHD-7q-MMh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Which service do you need?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jso-JD-g8h">
+                            <rect key="frame" x="0.0" y="100" width="284" height="34"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miniSearchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6W9-Uv-gQe">
+                            <rect key="frame" x="10" y="110" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="YR3-3z-VXK"/>
+                                <constraint firstAttribute="height" constant="15" id="tTY-X5-P79"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KOi-qy-kIb" secondAttribute="bottom" id="3H5-Wr-hCb"/>
+                        <constraint firstItem="6W9-Uv-gQe" firstAttribute="top" secondItem="4bN-65-B16" secondAttribute="bottom" constant="30" id="5Or-WC-zYF"/>
+                        <constraint firstItem="4bN-65-B16" firstAttribute="leading" secondItem="aih-d3-4WV" secondAttribute="leading" id="HAc-E2-58M"/>
+                        <constraint firstItem="jso-JD-g8h" firstAttribute="top" secondItem="4bN-65-B16" secondAttribute="bottom" constant="20" id="LP3-qJ-JEY"/>
+                        <constraint firstItem="KOi-qy-kIb" firstAttribute="leading" secondItem="aih-d3-4WV" secondAttribute="leading" id="LmX-gh-5He"/>
+                        <constraint firstItem="KOi-qy-kIb" firstAttribute="top" secondItem="aih-d3-4WV" secondAttribute="top" id="N4A-Ze-5Mz"/>
+                        <constraint firstItem="6W9-Uv-gQe" firstAttribute="leading" secondItem="aih-d3-4WV" secondAttribute="leading" constant="10" id="P5m-4u-dTo"/>
+                        <constraint firstItem="4bN-65-B16" firstAttribute="top" secondItem="aih-d3-4WV" secondAttribute="top" id="QPK-Xq-PCV"/>
+                        <constraint firstAttribute="trailing" secondItem="4bN-65-B16" secondAttribute="trailing" constant="80" id="XiV-89-RGW"/>
+                        <constraint firstAttribute="trailing" secondItem="KOi-qy-kIb" secondAttribute="trailing" id="bDh-Y6-9tb"/>
+                        <constraint firstItem="jso-JD-g8h" firstAttribute="leading" secondItem="aih-d3-4WV" secondAttribute="leading" id="bsA-jV-rKb"/>
+                        <constraint firstAttribute="trailing" secondItem="jso-JD-g8h" secondAttribute="trailing" id="cBK-Lb-Z3S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aih-d3-4WV" secondAttribute="bottom" id="JvS-aU-hfc"/>
+                <constraint firstItem="aih-d3-4WV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U1m-SD-jb4"/>
+                <constraint firstAttribute="trailing" secondItem="aih-d3-4WV" secondAttribute="trailing" id="dh7-wA-P9C"/>
+                <constraint firstItem="aih-d3-4WV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gXG-v0-jCI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="60.9375" y="-69.7265625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="miniSearchIcon" width="14" height="14"/>
+    </resources>
+</document>
