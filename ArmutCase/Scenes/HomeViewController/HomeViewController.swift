@@ -8,22 +8,24 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    // MARK: - IBOutlets
+    @IBOutlet weak var searchView: SearchView!
 
+    // MARK: - Properties
+    private var viewModel: HomeViewModel = HomeViewModel()
+
+    // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
+        setupBindings()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Business Logic
+    private func setupUI() {
     }
-    */
 
+    private func setupBindings() {
+        searchView.configure(viewModel: viewModel.searchViewModel)
+    }
 }

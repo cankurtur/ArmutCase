@@ -9,11 +9,11 @@ import UIKit
 
 class Images {
     // MARK: - Properties
-    static let header: UIImage = getImage(imageName: "header")
-    static let iconMiniSearch: UIImage = getImage(imageName: "iconMiniSearch")
-    static let wedding: UIImage = getImage(imageName: "wedding")
-    static let transportation: UIImage = getImage(imageName: "transportation")
-    static let cleaning: UIImage = getImage(imageName: "cleaning")
+    static let headerImage: UIImage = getImage(imageName: "headerImage")
+    static let miniSearchIcon: UIImage = getImage(imageName: "miniSearchIcon")
+    static let weddingIcon: UIImage = getImage(imageName: "weddingIcon")
+    static let transportationIcon: UIImage = getImage(imageName: "transportationIcon")
+    static let cleaningIcon: UIImage = getImage(imageName: "cleaningIcon")
 
     // To add new UIImage we have to use this function below
     static func getImage(imageName: String) -> UIImage {

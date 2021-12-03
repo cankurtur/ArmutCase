@@ -9,10 +9,10 @@ import UIKit
 
 extension UIImage {
     // MARK: - Properties
-    static let header = Images.header
-    static let iconMiniSearch = Images.iconMiniSearch
-    static let wedding = Images.wedding
-    static let transportation = Images.transportation
-    static let cleaning = Images.cleaning
+    static let headerImage = Images.headerImage
+    static let miniSearchIcon = Images.miniSearchIcon
+    static let weddingIcon = Images.weddingIcon
+    static let transportationIcon = Images.transportationIcon
+    static let cleaningIcon = Images.cleaningIcon
 }
 

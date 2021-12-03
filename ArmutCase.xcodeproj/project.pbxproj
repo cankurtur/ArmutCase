@@ -16,6 +16,9 @@
 		2655306B275A4CD900487B38 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655306A275A4CD900487B38 /* HomeViewController.swift */; };
 		2655306E275A4CEC00487B38 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2655306D275A4CEC00487B38 /* Home.storyboard */; };
 		26553071275A4CFA00487B38 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553070275A4CFA00487B38 /* HomeViewModel.swift */; };
+		26553075275A4F6000487B38 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553074275A4F6000487B38 /* SearchView.swift */; };
+		26553078275A4F6B00487B38 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553077275A4F6B00487B38 /* SearchViewModel.swift */; };
+		2655307B275A4F7400487B38 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2655307A275A4F7400487B38 /* SearchView.xib */; };
 		26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E88275A46A6000915B7 /* AppDelegate.swift */; };
 		26B48E8B275A46A6000915B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E8A275A46A6000915B7 /* SceneDelegate.swift */; };
 		26B48E90275A46A6000915B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B48E8E275A46A6000915B7 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		2655306A275A4CD900487B38 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2655306D275A4CEC00487B38 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		26553070275A4CFA00487B38 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		26553074275A4F6000487B38 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		26553077275A4F6B00487B38 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		2655307A275A4F7400487B38 /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
 		26B48E85275A46A6000915B7 /* ArmutCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmutCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B48E88275A46A6000915B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26B48E8A275A46A6000915B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +151,9 @@
 		26553069275A4CA400487B38 /* SearchView */ = {
 			isa = PBXGroup;
 			children = (
+				26553074275A4F6000487B38 /* SearchView.swift */,
+				26553077275A4F6B00487B38 /* SearchViewModel.swift */,
+				2655307A275A4F7400487B38 /* SearchView.xib */,
 			);
 			path = SearchView;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 			files = (
 				26B48E95275A46A7000915B7 /* LaunchScreen.storyboard in Resources */,
 				2655306E275A4CEC00487B38 /* Home.storyboard in Resources */,
+				2655307B275A4F7400487B38 /* SearchView.xib in Resources */,
 				2655304F275A4AAF00487B38 /* Colors.xcassets in Resources */,
 				26B48E92275A46A7000915B7 /* Assets.xcassets in Resources */,
 				26B48E90275A46A6000915B7 /* Main.storyboard in Resources */,
@@ -259,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26553078275A4F6B00487B38 /* SearchViewModel.swift in Sources */,
+				26553075275A4F6000487B38 /* SearchView.swift in Sources */,
 				26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */,
 				26553071275A4CFA00487B38 /* HomeViewModel.swift in Sources */,
 				26553058275A4B2300487B38 /* Images.swift in Sources */,
