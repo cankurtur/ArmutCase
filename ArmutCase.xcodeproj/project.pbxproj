@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2655304F275A4AAF00487B38 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2655304E275A4AAF00487B38 /* Colors.xcassets */; };
+		26553054275A4B1300487B38 /* UIImageThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553053275A4B1300487B38 /* UIImageThemeExtension.swift */; };
+		26553058275A4B2300487B38 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553057275A4B2300487B38 /* Images.swift */; };
+		2655305B275A4B3B00487B38 /* UIColorThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655305A275A4B3B00487B38 /* UIColorThemeExtension.swift */; };
+		2655305E275A4B5500487B38 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655305D275A4B5500487B38 /* Colors.swift */; };
 		26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E88275A46A6000915B7 /* AppDelegate.swift */; };
 		26B48E8B275A46A6000915B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E8A275A46A6000915B7 /* SceneDelegate.swift */; };
 		26B48E8D275A46A6000915B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E8C275A46A6000915B7 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		2655304E275A4AAF00487B38 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		26553053275A4B1300487B38 /* UIImageThemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageThemeExtension.swift; sourceTree = "<group>"; };
+		26553057275A4B2300487B38 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		2655305A275A4B3B00487B38 /* UIColorThemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorThemeExtension.swift; sourceTree = "<group>"; };
+		2655305D275A4B5500487B38 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		26B48E85275A46A6000915B7 /* ArmutCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmutCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B48E88275A46A6000915B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26B48E8A275A46A6000915B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				2655304D275A494600487B38 /* Resources */,
+				26553051275A4AEC00487B38 /* Images */,
+				26553052275A4AF400487B38 /* Colors */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -78,6 +88,24 @@
 				2655304E275A4AAF00487B38 /* Colors.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		26553051275A4AEC00487B38 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				26553053275A4B1300487B38 /* UIImageThemeExtension.swift */,
+				26553057275A4B2300487B38 /* Images.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		26553052275A4AF400487B38 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				2655305A275A4B3B00487B38 /* UIColorThemeExtension.swift */,
+				2655305D275A4B5500487B38 /* Colors.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		26841598275A48D800378DD9 /* Scenes */ = {
@@ -191,7 +219,11 @@
 			files = (
 				26B48E8D275A46A6000915B7 /* ViewController.swift in Sources */,
 				26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */,
+				26553058275A4B2300487B38 /* Images.swift in Sources */,
+				2655305E275A4B5500487B38 /* Colors.swift in Sources */,
+				2655305B275A4B3B00487B38 /* UIColorThemeExtension.swift in Sources */,
 				26B48E8B275A46A6000915B7 /* SceneDelegate.swift in Sources */,
+				26553054275A4B1300487B38 /* UIImageThemeExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
