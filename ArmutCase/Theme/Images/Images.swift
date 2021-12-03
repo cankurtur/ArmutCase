@@ -11,7 +11,7 @@ class Images {
     // MARK: - Properties
     static let headerImage: UIImage = getImage(imageName: "headerImage")
     static let miniSearchIcon: UIImage = getImage(imageName: "miniSearchIcon")
-    static let weddingIcon: UIImage = getImage(imageName: "weddingIcon")
+    static let weddingImage: UIImage = getImage(imageName: "weddingImage")
     static let transportationIcon: UIImage = getImage(imageName: "transportationIcon")
     static let cleaningIcon: UIImage = getImage(imageName: "cleaningIcon")
 

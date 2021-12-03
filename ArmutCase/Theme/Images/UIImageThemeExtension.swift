@@ -11,7 +11,7 @@ extension UIImage {
     // MARK: - Properties
     static let headerImage = Images.headerImage
     static let miniSearchIcon = Images.miniSearchIcon
-    static let weddingIcon = Images.weddingIcon
+    static let weddingImage = Images.weddingImage
     static let transportationIcon = Images.transportationIcon
     static let cleaningIcon = Images.cleaningIcon
 }
