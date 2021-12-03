@@ -37,6 +37,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26553046275A48B800487B38 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				26B48E88275A46A6000915B7 /* AppDelegate.swift */,
+				26B48E8A275A46A6000915B7 /* SceneDelegate.swift */,
+				26B48E93275A46A7000915B7 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		26553049275A48F500487B38 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2655304A275A48FD00487B38 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2655304D275A494600487B38 /* Resources */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		2655304B275A490100487B38 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2655304D275A494600487B38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26B48E91275A46A7000915B7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		26841598275A48D800378DD9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				26B48E8E275A46A6000915B7 /* Main.storyboard */,
+				26B48E8C275A46A6000915B7 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		26B48E7C275A46A6000915B7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +105,11 @@
 		26B48E87275A46A6000915B7 /* ArmutCase */ = {
 			isa = PBXGroup;
 			children = (
-				26B48E88275A46A6000915B7 /* AppDelegate.swift */,
-				26B48E8A275A46A6000915B7 /* SceneDelegate.swift */,
-				26B48E8C275A46A6000915B7 /* ViewController.swift */,
-				26B48E8E275A46A6000915B7 /* Main.storyboard */,
-				26B48E91275A46A7000915B7 /* Assets.xcassets */,
-				26B48E93275A46A7000915B7 /* LaunchScreen.storyboard */,
+				26553046275A48B800487B38 /* Application */,
+				26841598275A48D800378DD9 /* Scenes */,
+				26553049275A48F500487B38 /* Components */,
+				2655304A275A48FD00487B38 /* Theme */,
+				2655304B275A490100487B38 /* Utility */,
 				26B48E96275A46A7000915B7 /* Info.plist */,
 			);
 			path = ArmutCase;
