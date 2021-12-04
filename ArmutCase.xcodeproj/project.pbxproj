@@ -22,6 +22,14 @@
 		26553075275A4F6000487B38 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553074275A4F6000487B38 /* SearchView.swift */; };
 		26553078275A4F6B00487B38 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553077275A4F6B00487B38 /* SearchViewModel.swift */; };
 		2655307B275A4F7400487B38 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2655307A275A4F7400487B38 /* SearchView.xib */; };
+		269032CA275B576900915B2B /* ServiceAreasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269032C9275B576900915B2B /* ServiceAreasView.swift */; };
+		269032CE275B577200915B2B /* ServiceAreasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269032CD275B577200915B2B /* ServiceAreasView.xib */; };
+		269032D1275B577A00915B2B /* ServiceAreasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269032D0275B577A00915B2B /* ServiceAreasViewModel.swift */; };
+		269032D5275B57DE00915B2B /* ButtonAndTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269032D4275B57DE00915B2B /* ButtonAndTitleView.swift */; };
+		269032D9275B57E600915B2B /* ButtonAndTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269032D8275B57E600915B2B /* ButtonAndTitleView.xib */; };
+		269032DC275B57ED00915B2B /* ButtonAndTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269032DB275B57ED00915B2B /* ButtonAndTitleViewModel.swift */; };
+		269032E6275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269032E4275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.swift */; };
+		269032E7275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269032E5275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.xib */; };
 		26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E88275A46A6000915B7 /* AppDelegate.swift */; };
 		26B48E8B275A46A6000915B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E8A275A46A6000915B7 /* SceneDelegate.swift */; };
 		26B48E90275A46A6000915B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B48E8E275A46A6000915B7 /* Main.storyboard */; };
@@ -45,6 +53,14 @@
 		26553074275A4F6000487B38 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		26553077275A4F6B00487B38 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		2655307A275A4F7400487B38 /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		269032C9275B576900915B2B /* ServiceAreasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAreasView.swift; sourceTree = "<group>"; };
+		269032CD275B577200915B2B /* ServiceAreasView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceAreasView.xib; sourceTree = "<group>"; };
+		269032D0275B577A00915B2B /* ServiceAreasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAreasViewModel.swift; sourceTree = "<group>"; };
+		269032D4275B57DE00915B2B /* ButtonAndTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAndTitleView.swift; sourceTree = "<group>"; };
+		269032D8275B57E600915B2B /* ButtonAndTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonAndTitleView.xib; sourceTree = "<group>"; };
+		269032DB275B57ED00915B2B /* ButtonAndTitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAndTitleViewModel.swift; sourceTree = "<group>"; };
+		269032E4275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAndTitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		269032E5275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonAndTitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		26B48E85275A46A6000915B7 /* ArmutCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmutCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B48E88275A46A6000915B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26B48E8A275A46A6000915B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +104,7 @@
 		26553049275A48F500487B38 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				269032D3275B57BD00915B2B /* ButtonAndTitleView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -159,6 +176,7 @@
 		26553068275A4C9300487B38 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				269032C8275B574900915B2B /* ServiveAreasView */,
 				26194C8D275A5831007E4753 /* CampaignView */,
 				26553069275A4CA400487B38 /* SearchView */,
 			);
@@ -182,6 +200,36 @@
 				26553067275A4C6E00487B38 /* HomeViewController */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		269032C8275B574900915B2B /* ServiveAreasView */ = {
+			isa = PBXGroup;
+			children = (
+				269032C9275B576900915B2B /* ServiceAreasView.swift */,
+				269032CD275B577200915B2B /* ServiceAreasView.xib */,
+				269032D0275B577A00915B2B /* ServiceAreasViewModel.swift */,
+			);
+			path = ServiveAreasView;
+			sourceTree = "<group>";
+		};
+		269032D3275B57BD00915B2B /* ButtonAndTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				269032DE275B59F500915B2B /* ButtonAndTitleCollectionViewCell */,
+				269032D4275B57DE00915B2B /* ButtonAndTitleView.swift */,
+				269032D8275B57E600915B2B /* ButtonAndTitleView.xib */,
+				269032DB275B57ED00915B2B /* ButtonAndTitleViewModel.swift */,
+			);
+			path = ButtonAndTitleView;
+			sourceTree = "<group>";
+		};
+		269032DE275B59F500915B2B /* ButtonAndTitleCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				269032E4275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.swift */,
+				269032E5275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.xib */,
+			);
+			path = ButtonAndTitleCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		26B48E7C275A46A6000915B7 = {
@@ -272,9 +320,12 @@
 			files = (
 				26B48E95275A46A7000915B7 /* LaunchScreen.storyboard in Resources */,
 				2655306E275A4CEC00487B38 /* Home.storyboard in Resources */,
+				269032D9275B57E600915B2B /* ButtonAndTitleView.xib in Resources */,
+				269032E7275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.xib in Resources */,
 				2655307B275A4F7400487B38 /* SearchView.xib in Resources */,
 				2655304F275A4AAF00487B38 /* Colors.xcassets in Resources */,
 				26B48E92275A46A7000915B7 /* Assets.xcassets in Resources */,
+				269032CE275B577200915B2B /* ServiceAreasView.xib in Resources */,
 				26194C96275A5857007E4753 /* CampaignView.xib in Resources */,
 				26B48E90275A46A6000915B7 /* Main.storyboard in Resources */,
 			);
@@ -290,6 +341,8 @@
 				26194C8F275A5846007E4753 /* CampaignView.swift in Sources */,
 				26194C93275A5850007E4753 /* CampaignViewModel.swift in Sources */,
 				26553078275A4F6B00487B38 /* SearchViewModel.swift in Sources */,
+				269032CA275B576900915B2B /* ServiceAreasView.swift in Sources */,
+				269032D1275B577A00915B2B /* ServiceAreasViewModel.swift in Sources */,
 				26553075275A4F6000487B38 /* SearchView.swift in Sources */,
 				26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */,
 				26553071275A4CFA00487B38 /* HomeViewModel.swift in Sources */,
@@ -298,8 +351,11 @@
 				2655306B275A4CD900487B38 /* HomeViewController.swift in Sources */,
 				2655305B275A4B3B00487B38 /* UIColorThemeExtension.swift in Sources */,
 				26B48E8B275A46A6000915B7 /* SceneDelegate.swift in Sources */,
+				269032E6275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.swift in Sources */,
 				26553062275A4BB700487B38 /* UIViewExtension.swift in Sources */,
 				26553054275A4B1300487B38 /* UIImageThemeExtension.swift in Sources */,
+				269032DC275B57ED00915B2B /* ButtonAndTitleViewModel.swift in Sources */,
+				269032D5275B57DE00915B2B /* ButtonAndTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
