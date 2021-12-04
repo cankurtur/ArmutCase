@@ -35,6 +35,7 @@
 		26B48E90275A46A6000915B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B48E8E275A46A6000915B7 /* Main.storyboard */; };
 		26B48E92275A46A7000915B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B48E91275A46A7000915B7 /* Assets.xcassets */; };
 		26B48E95275A46A7000915B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B48E93275A46A7000915B7 /* LaunchScreen.storyboard */; };
+		C6FAADEA15C092E680F900AF /* Pods_ArmutCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CF7B5D5A7B6DA6185D6BAD /* Pods_ArmutCase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,9 @@
 		26B48E91275A46A7000915B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26B48E94275A46A7000915B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26B48E96275A46A7000915B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D40C56B7641B6DF7C16F0B3 /* Pods-ArmutCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmutCase.debug.xcconfig"; path = "Target Support Files/Pods-ArmutCase/Pods-ArmutCase.debug.xcconfig"; sourceTree = "<group>"; };
+		A0CF7B5D5A7B6DA6185D6BAD /* Pods_ArmutCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmutCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83B15EE6AEF1A8877285239 /* Pods-ArmutCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmutCase.release.xcconfig"; path = "Target Support Files/Pods-ArmutCase/Pods-ArmutCase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FAADEA15C092E680F900AF /* Pods_ArmutCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +242,8 @@
 			children = (
 				26B48E87275A46A6000915B7 /* ArmutCase */,
 				26B48E86275A46A6000915B7 /* Products */,
+				B340A0B7B9C5271F04B9596E /* Pods */,
+				A297358BD99749B844746C7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +268,24 @@
 			path = ArmutCase;
 			sourceTree = "<group>";
 		};
+		A297358BD99749B844746C7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF7B5D5A7B6DA6185D6BAD /* Pods_ArmutCase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B340A0B7B9C5271F04B9596E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D40C56B7641B6DF7C16F0B3 /* Pods-ArmutCase.debug.xcconfig */,
+				B83B15EE6AEF1A8877285239 /* Pods-ArmutCase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26B48E99275A46A7000915B7 /* Build configuration list for PBXNativeTarget "ArmutCase" */;
 			buildPhases = (
+				8E2FA419B2EF88751C68EF09 /* [CP] Check Pods Manifest.lock */,
 				26B48E81275A46A6000915B7 /* Sources */,
 				26B48E82275A46A6000915B7 /* Frameworks */,
 				26B48E83275A46A6000915B7 /* Resources */,
+				372E81DC48BF126C9AD577D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,6 +359,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		372E81DC48BF126C9AD577D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArmutCase/Pods-ArmutCase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArmutCase/Pods-ArmutCase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArmutCase/Pods-ArmutCase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E2FA419B2EF88751C68EF09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArmutCase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26B48E81275A46A6000915B7 /* Sources */ = {
@@ -499,6 +568,7 @@
 		};
 		26B48E9A275A46A7000915B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D40C56B7641B6DF7C16F0B3 /* Pods-ArmutCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -518,6 +588,7 @@
 		};
 		26B48E9B275A46A7000915B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B83B15EE6AEF1A8877285239 /* Pods-ArmutCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
