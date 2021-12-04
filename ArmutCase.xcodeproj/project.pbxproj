@@ -14,6 +14,8 @@
 		264E2C7C275B8DEC00C2E55D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E2C7B275B8DEC00C2E55D /* APIConstants.swift */; };
 		264E2C80275B8E5D00C2E55D /* HomeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E2C7F275B8E5D00C2E55D /* HomeResponseModel.swift */; };
 		264E2C84275B8E6900C2E55D /* DetailsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E2C83275B8E6900C2E55D /* DetailsResponseModel.swift */; };
+		264E2C87275BA98A00C2E55D /* HomeUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E2C86275BA98A00C2E55D /* HomeUIModel.swift */; };
+		264E2C99275BC70500C2E55D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E2C98275BC70500C2E55D /* StringExtension.swift */; };
 		2655304F275A4AAF00487B38 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2655304E275A4AAF00487B38 /* Colors.xcassets */; };
 		26553054275A4B1300487B38 /* UIImageThemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553053275A4B1300487B38 /* UIImageThemeExtension.swift */; };
 		26553058275A4B2300487B38 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26553057275A4B2300487B38 /* Images.swift */; };
@@ -50,6 +52,8 @@
 		264E2C7B275B8DEC00C2E55D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		264E2C7F275B8E5D00C2E55D /* HomeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseModel.swift; sourceTree = "<group>"; };
 		264E2C83275B8E6900C2E55D /* DetailsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsResponseModel.swift; sourceTree = "<group>"; };
+		264E2C86275BA98A00C2E55D /* HomeUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIModel.swift; sourceTree = "<group>"; };
+		264E2C98275BC70500C2E55D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		2655304E275A4AAF00487B38 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		26553053275A4B1300487B38 /* UIImageThemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageThemeExtension.swift; sourceTree = "<group>"; };
 		26553057275A4B2300487B38 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				26553061275A4BB700487B38 /* UIViewExtension.swift */,
+				264E2C98275BC70500C2E55D /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				2655306A275A4CD900487B38 /* HomeViewController.swift */,
 				26553070275A4CFA00487B38 /* HomeViewModel.swift */,
 				2655306D275A4CEC00487B38 /* Home.storyboard */,
+				264E2C86275BA98A00C2E55D /* HomeUIModel.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 				264E2C78275B8C7D00C2E55D /* Networking.swift in Sources */,
 				26194C8F275A5846007E4753 /* CampaignView.swift in Sources */,
 				26194C93275A5850007E4753 /* CampaignViewModel.swift in Sources */,
+				264E2C87275BA98A00C2E55D /* HomeUIModel.swift in Sources */,
 				26553078275A4F6B00487B38 /* SearchViewModel.swift in Sources */,
 				269032CA275B576900915B2B /* ServiceAreasView.swift in Sources */,
 				264E2C84275B8E6900C2E55D /* DetailsResponseModel.swift in Sources */,
@@ -453,6 +460,7 @@
 				26553062275A4BB700487B38 /* UIViewExtension.swift in Sources */,
 				264E2C7C275B8DEC00C2E55D /* APIConstants.swift in Sources */,
 				26553054275A4B1300487B38 /* UIImageThemeExtension.swift in Sources */,
+				264E2C99275BC70500C2E55D /* StringExtension.swift in Sources */,
 				269032DC275B57ED00915B2B /* ButtonAndTitleViewModel.swift in Sources */,
 				269032D5275B57DE00915B2B /* ButtonAndTitleView.swift in Sources */,
 				264E2C80275B8E5D00C2E55D /* HomeResponseModel.swift in Sources */,

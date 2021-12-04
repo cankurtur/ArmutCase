@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HomeResponseModel: Decodable {
+struct HomeResponseModel: Codable {
     let allServices: [Services]
     let popular: [Services]
     let posts: [Post]
@@ -19,13 +19,13 @@ struct HomeResponseModel: Decodable {
     }
 }
 
-struct Services: Decodable {
+struct Services: Codable {
     let id: Int
     let serviceID: Int
     let name: String
     let longName: String
-    let imageURL: String
-    let proCount: Int
+    let imageURL: String?
+    let proCount: Int?
 
     private enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -37,7 +37,7 @@ struct Services: Decodable {
     }
 }
 
-struct Post: Decodable {
+struct Post: Codable {
     let title: String
     let category: String
     let imageURL: String

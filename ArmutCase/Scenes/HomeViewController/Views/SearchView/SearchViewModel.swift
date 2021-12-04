@@ -11,4 +11,9 @@ struct SearchViewModel {
     // MARK: - Properties
     let titleText: String
     let headerImage: UIImage
+
+    init() {
+        self.titleText = "Hizmet piş ağzıma düş"
+        self.headerImage = .headerImage
+    }
 }

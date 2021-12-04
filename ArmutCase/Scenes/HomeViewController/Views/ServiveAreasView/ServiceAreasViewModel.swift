@@ -19,6 +19,24 @@ struct ServiceAreasViewModel {
     // MARK: - Properties
     let titleText: String
     let content: [ButtonAndTitleViewModel]
+    var serviceUIModel: [ServicesUIModel]
+
+    init(serviceUIModel: [ServicesUIModel]) {
+        self.serviceUIModel = serviceUIModel
+
+        self.titleText = "All services"
+        self.content = [
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[0].name),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[1].name),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[2].name),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[3].name),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[4].name),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[5].name.splitTheFirstWord()),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[6].name.splitTheFirstWord()),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[7].name)
+        ]
+    }
+
 
     // MARK: - Business Logic
     func createLayout() -> UICollectionViewCompositionalLayout {
