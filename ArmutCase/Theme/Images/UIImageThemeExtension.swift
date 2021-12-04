@@ -14,5 +14,6 @@ extension UIImage {
     static let weddingImage = Images.weddingImage
     static let transportationIcon = Images.transportationIcon
     static let cleaningIcon = Images.cleaningIcon
+    static let dummyImage = Images.dummyImage
 }
 

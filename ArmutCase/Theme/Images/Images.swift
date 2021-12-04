@@ -14,6 +14,7 @@ class Images {
     static let weddingImage: UIImage = getImage(imageName: "weddingImage")
     static let transportationIcon: UIImage = getImage(imageName: "transportationIcon")
     static let cleaningIcon: UIImage = getImage(imageName: "cleaningIcon")
+    static let dummyImage: UIImage = getImage(imageName: "dummyImage")
 
     // To add new UIImage we have to use this function below
     static func getImage(imageName: String) -> UIImage {
