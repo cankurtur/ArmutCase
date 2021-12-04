@@ -206,8 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				269032C9275B576900915B2B /* ServiceAreasView.swift */,
-				269032CD275B577200915B2B /* ServiceAreasView.xib */,
 				269032D0275B577A00915B2B /* ServiceAreasViewModel.swift */,
+				269032CD275B577200915B2B /* ServiceAreasView.xib */,
 			);
 			path = ServiveAreasView;
 			sourceTree = "<group>";

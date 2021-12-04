@@ -9,7 +9,7 @@ import UIKit
 
 class ButtonAndTitleCollectionViewCell: UICollectionViewCell {
     // MARK: - IBOutlets
-    @IBOutlet weak var buttonAndTitleView: ButtonAndTitleView!
+    @IBOutlet private weak var buttonAndTitleView: ButtonAndTitleView!
     
     // MARK: - Life Cycles
     override func awakeFromNib() {

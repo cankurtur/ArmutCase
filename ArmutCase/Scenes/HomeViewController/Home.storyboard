@@ -36,12 +36,22 @@
                                                     <constraint firstAttribute="height" constant="200" id="StN-N0-iev"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsr-Lt-SUK" customClass="ServiceAreasView" customModule="ArmutCase" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="670" width="350" height="250"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="6Di-sx-oh0"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="gsr-Lt-SUK" secondAttribute="trailing" constant="20" id="1rc-k0-Oo4"/>
                                             <constraint firstItem="yMD-8U-S6P" firstAttribute="top" secondItem="Wl4-zR-QSd" secondAttribute="top" constant="20" id="8v7-ki-Klk"/>
                                             <constraint firstItem="y3h-Gx-5Wo" firstAttribute="top" secondItem="yMD-8U-S6P" secondAttribute="bottom" constant="50" id="JvR-co-AtX"/>
+                                            <constraint firstItem="gsr-Lt-SUK" firstAttribute="top" secondItem="y3h-Gx-5Wo" secondAttribute="bottom" constant="50" id="Jzw-zy-hgU"/>
                                             <constraint firstItem="y3h-Gx-5Wo" firstAttribute="leading" secondItem="Wl4-zR-QSd" secondAttribute="leading" constant="20" id="WW5-wi-XxA"/>
+                                            <constraint firstItem="gsr-Lt-SUK" firstAttribute="leading" secondItem="Wl4-zR-QSd" secondAttribute="leading" constant="20" id="ctW-wS-uMd"/>
                                             <constraint firstAttribute="trailing" secondItem="yMD-8U-S6P" secondAttribute="trailing" constant="20" id="doK-gp-hrS"/>
                                             <constraint firstAttribute="height" constant="1000" id="eHZ-6V-GvE"/>
                                             <constraint firstAttribute="trailing" secondItem="y3h-Gx-5Wo" secondAttribute="trailing" constant="20" id="eQ6-9G-ghA"/>
@@ -72,6 +82,7 @@
                     <connections>
                         <outlet property="campaignView" destination="y3h-Gx-5Wo" id="0F2-tF-0gG"/>
                         <outlet property="searchView" destination="yMD-8U-S6P" id="zrC-Zd-XbA"/>
+                        <outlet property="serviceAreasView" destination="gsr-Lt-SUK" id="QQL-cd-Bd6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBO-HX-ph9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
