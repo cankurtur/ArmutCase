@@ -11,4 +11,5 @@ struct ButtonAndTitleViewModel {
     // MARK: - Properties
     let buttonImage: UIImage
     let buttonTitleText: String
+    let clickAction: (() -> Void)?
 }

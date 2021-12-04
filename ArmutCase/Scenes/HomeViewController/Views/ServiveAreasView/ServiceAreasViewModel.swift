@@ -26,14 +26,31 @@ struct ServiceAreasViewModel {
 
         self.titleText = "All services"
         self.content = [
-            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[0].name),
-            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[1].name),
-            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[2].name),
-            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[3].name),
-            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[4].name),
-            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[5].name.splitTheFirstWord()),
-            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[6].name.splitTheFirstWord()),
-            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[7].name)
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[0].name, clickAction: {
+                print("Test1")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[1].name, clickAction: {
+                print("Test2")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[2].name, clickAction: {
+                print("Test3")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[3].name, clickAction: {
+                print("Test4")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[4].name, clickAction: {
+                print("Test5")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[5].name.splitTheFirstWord(), clickAction: {
+                print("Test6")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[6].name.splitTheFirstWord(), clickAction: {
+                print("Test7")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[7].name, clickAction: {
+                print("Test8")
+            }),
+
         ]
     }
 
