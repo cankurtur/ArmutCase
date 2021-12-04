@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CampaignView" customModule="ArmutCase" customModuleProvider="target">
+            <connections>
+                <outlet property="campaignImageView" destination="yL8-0x-bMV" id="Bbp-ve-A8b"/>
+                <outlet property="campaignOfferLabel" destination="ucy-xM-mrt" id="BTa-fp-ycA"/>
+                <outlet property="campaignTitleLabel" destination="Ghs-rx-qoi" id="iZ6-XV-cuX"/>
+                <outlet property="discountLabel" destination="mKk-NK-blb" id="EqL-Hw-NBG"/>
+                <outlet property="discountView" destination="774-2c-Xjk" id="y9K-YO-iZj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLT-C1-1eI" userLabel="Holder View">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yL8-0x-bMV">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="ILz-WA-7oO"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-QG-0uB" userLabel="Campaign Details View">
+                            <rect key="frame" x="0.0" y="120" width="374" height="80"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghs-rx-qoi">
+                                    <rect key="frame" x="8" y="10" width="366" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="eTu-wx-IN1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucy-xM-mrt">
+                                    <rect key="frame" x="8" y="30" width="286" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="W7H-CW-dEf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="campaignGreen"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Ghs-rx-qoi" secondAttribute="trailing" id="3r2-wg-dLv"/>
+                                <constraint firstItem="Ghs-rx-qoi" firstAttribute="top" secondItem="sRn-QG-0uB" secondAttribute="top" constant="10" id="NuR-co-fSD"/>
+                                <constraint firstItem="Ghs-rx-qoi" firstAttribute="leading" secondItem="sRn-QG-0uB" secondAttribute="leading" constant="8" id="b7P-uD-JgG"/>
+                                <constraint firstItem="ucy-xM-mrt" firstAttribute="leading" secondItem="sRn-QG-0uB" secondAttribute="leading" constant="8" id="djt-zg-gNX"/>
+                                <constraint firstAttribute="trailing" secondItem="ucy-xM-mrt" secondAttribute="trailing" constant="80" id="eDW-W4-yR3"/>
+                                <constraint firstItem="ucy-xM-mrt" firstAttribute="top" secondItem="Ghs-rx-qoi" secondAttribute="bottom" constant="5" id="xQG-Z3-zbH"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="774-2c-Xjk" userLabel="Discount View">
+                            <rect key="frame" x="229" y="20" width="125" height="65"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKk-NK-blb">
+                                    <rect key="frame" x="0.0" y="0.0" width="125" height="65"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="0FJ-WE-ihf"/>
+                                <constraint firstAttribute="bottom" secondItem="mKk-NK-blb" secondAttribute="bottom" id="Fzl-dL-T7K"/>
+                                <constraint firstItem="mKk-NK-blb" firstAttribute="leading" secondItem="774-2c-Xjk" secondAttribute="leading" id="Q0a-p6-gT2"/>
+                                <constraint firstAttribute="width" constant="125" id="qib-vc-dtH"/>
+                                <constraint firstItem="mKk-NK-blb" firstAttribute="top" secondItem="774-2c-Xjk" secondAttribute="top" id="sBh-gn-2g3"/>
+                                <constraint firstAttribute="trailing" secondItem="mKk-NK-blb" secondAttribute="trailing" id="uuO-hq-RaM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="774-2c-Xjk" firstAttribute="top" secondItem="hLT-C1-1eI" secondAttribute="top" constant="20" id="1Tv-31-T4P"/>
+                        <constraint firstAttribute="trailing" secondItem="774-2c-Xjk" secondAttribute="trailing" constant="20" id="5ab-Kk-beV"/>
+                        <constraint firstItem="sRn-QG-0uB" firstAttribute="top" secondItem="yL8-0x-bMV" secondAttribute="bottom" id="NbA-oX-1w3"/>
+                        <constraint firstItem="yL8-0x-bMV" firstAttribute="top" secondItem="hLT-C1-1eI" secondAttribute="top" id="SIh-9y-Xs4"/>
+                        <constraint firstItem="sRn-QG-0uB" firstAttribute="leading" secondItem="hLT-C1-1eI" secondAttribute="leading" id="W7X-cc-DnY"/>
+                        <constraint firstItem="yL8-0x-bMV" firstAttribute="leading" secondItem="hLT-C1-1eI" secondAttribute="leading" id="bHb-Ox-fIp"/>
+                        <constraint firstAttribute="trailing" secondItem="yL8-0x-bMV" secondAttribute="trailing" id="hyb-1N-D4z"/>
+                        <constraint firstAttribute="bottom" secondItem="sRn-QG-0uB" secondAttribute="bottom" id="jLl-Tl-jbT"/>
+                        <constraint firstAttribute="trailing" secondItem="sRn-QG-0uB" secondAttribute="trailing" id="mmp-nA-3xS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hLT-C1-1eI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Wa-ml-qn3"/>
+                <constraint firstAttribute="bottom" secondItem="hLT-C1-1eI" secondAttribute="bottom" id="WGh-bL-nKp"/>
+                <constraint firstItem="hLT-C1-1eI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y3P-QB-iPj"/>
+                <constraint firstAttribute="trailing" secondItem="hLT-C1-1eI" secondAttribute="trailing" id="jwU-cG-vi0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-89.84375" y="-41.015625"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="campaignGreen">
+            <color red="0.15000000596046448" green="0.55900001525878906" blue="0.25999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

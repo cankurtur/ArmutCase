@@ -9,7 +9,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
     // MARK: - IBOutlets
-    @IBOutlet weak var searchView: SearchView!
+    @IBOutlet private weak var searchView: SearchView!
+    @IBOutlet private weak var campaignView: CampaignView!
+    @IBOutlet private weak var serviceAreasView: ServiceAreasView!
 
     // MARK: - Properties
     private var viewModel: HomeViewModel = HomeViewModel()
@@ -27,5 +29,7 @@ class HomeViewController: UIViewController {
 
     private func setupBindings() {
         searchView.configure(viewModel: viewModel.searchViewModel)
+        campaignView.configure(viewModel: viewModel.campaignViewModel)
+        serviceAreasView.configure(viewModel: viewModel.serviceAreasViewModel)
     }
 }
