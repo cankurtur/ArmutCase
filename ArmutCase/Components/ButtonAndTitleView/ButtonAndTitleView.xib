@@ -30,6 +30,9 @@
                                         <constraint firstAttribute="width" secondItem="1eK-JO-GFM" secondAttribute="height" multiplier="1:1" id="8EZ-ji-P9S"/>
                                     </constraints>
                                     <color key="tintColor" name="campaignGreen"/>
+                                    <connections>
+                                        <action selector="buttonClicked" destination="-1" eventType="touchUpInside" id="aZf-HE-3Xf"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,7 +42,7 @@
                                 <constraint firstItem="1eK-JO-GFM" firstAttribute="centerY" secondItem="FIV-gb-dz7" secondAttribute="centerY" id="tzo-4N-Miq"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qu6-Jn-epn">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="qu6-Jn-epn">
                             <rect key="frame" x="0.0" y="80" width="80" height="0.0"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                             <nil key="textColor"/>

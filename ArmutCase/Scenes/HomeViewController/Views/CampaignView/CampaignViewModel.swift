@@ -13,4 +13,11 @@ struct CampaignViewModel {
     let campaignTitleText: String
     let campaignOfferText: String
     let discountText: String
+
+    init() {
+        self.campaignImage =  .weddingImage
+        self.campaignTitleText = "FIRST TIME NEWLY WEDS"
+        self.campaignOfferText = "WEDDING PHOTOGRAPHERS FROM 540 TL"
+        self.discountText = "-15% İNDİRİM"
+    }
 }

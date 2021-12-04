@@ -14,22 +14,36 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var serviceAreasView: ServiceAreasView!
 
     // MARK: - Properties
-    private var viewModel: HomeViewModel = HomeViewModel()
+    private var viewModel = HomeViewModel()
 
     // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
         setupBindings()
     }
 
     // MARK: - Business Logic
-    private func setupUI() {
+    private func setupBindings() {
+        configureViews()
+
+        viewModel.fetchHomeData { homeUIModel in
+            self.configureViewsWithData(model: homeUIModel)
+        }
     }
 
-    private func setupBindings() {
+    private func configureViews() {
         searchView.configure(viewModel: viewModel.searchViewModel)
         campaignView.configure(viewModel: viewModel.campaignViewModel)
-        serviceAreasView.configure(viewModel: viewModel.serviceAreasViewModel)
+    }
+
+    private func configureViewsWithData(model: HomeUIModel) {
+        configureServiceAreasView(model: model)
+    }
+
+    private func configureServiceAreasView(model: HomeUIModel) {
+        guard let allServices = model.allServices else { return }
+
+        let servicesAreasViewModel = ServiceAreasViewModel(serviceUIModel: allServices)
+        serviceAreasView.configure(viewModel: servicesAreasViewModel)
     }
 }

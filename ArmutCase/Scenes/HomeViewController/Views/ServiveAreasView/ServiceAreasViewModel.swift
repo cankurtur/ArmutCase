@@ -19,6 +19,41 @@ struct ServiceAreasViewModel {
     // MARK: - Properties
     let titleText: String
     let content: [ButtonAndTitleViewModel]
+    var serviceUIModel: [ServicesUIModel]
+
+    init(serviceUIModel: [ServicesUIModel]) {
+        self.serviceUIModel = serviceUIModel
+
+        self.titleText = "All services"
+        self.content = [
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[0].name, clickAction: {
+                print("Test1")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[1].name, clickAction: {
+                print("Test2")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[2].name, clickAction: {
+                print("Test3")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[3].name, clickAction: {
+                print("Test4")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[4].name, clickAction: {
+                print("Test5")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[5].name.splitTheFirstWord(), clickAction: {
+                print("Test6")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[6].name.splitTheFirstWord(), clickAction: {
+                print("Test7")
+            }),
+            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[7].name, clickAction: {
+                print("Test8")
+            }),
+
+        ]
+    }
+
 
     // MARK: - Business Logic
     func createLayout() -> UICollectionViewCompositionalLayout {
