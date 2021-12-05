@@ -21,6 +21,7 @@ struct ServiceAreasViewModel {
     let content: [ButtonAndTitleViewModel]
     var serviceUIModel: [ServicesUIModel]
 
+    // MARK: - Initializers
     init(serviceUIModel: [ServicesUIModel]) {
         self.serviceUIModel = serviceUIModel
 
