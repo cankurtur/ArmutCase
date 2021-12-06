@@ -47,8 +47,6 @@
 		269DA827275EA1D000A93034 /* CircleAndLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269DA826275EA1D000A93034 /* CircleAndLabelView.swift */; };
 		269DA82B275EA1D700A93034 /* CircleAndLabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269DA82A275EA1D700A93034 /* CircleAndLabelViewModel.swift */; };
 		269DA82E275EA1DC00A93034 /* CircleAndLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269DA82D275EA1DC00A93034 /* CircleAndLabelView.xib */; };
-		269DA834275EA59800A93034 /* CircleAndLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269DA832275EA59800A93034 /* CircleAndLabelCollectionViewCell.swift */; };
-		269DA835275EA59800A93034 /* CircleAndLabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269DA833275EA59800A93034 /* CircleAndLabelCollectionViewCell.xib */; };
 		26A61EAF275E334900E4327E /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A61EAE275E334900E4327E /* UICollectionViewExtension.swift */; };
 		26A61EBB275E3A8D00E4327E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A61EBA275E3A8D00E4327E /* DetailsViewController.swift */; };
 		26A61EC1275E3AB600E4327E /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A61EC0275E3AB600E4327E /* DetailsViewModel.swift */; };
@@ -121,8 +119,6 @@
 		269DA826275EA1D000A93034 /* CircleAndLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAndLabelView.swift; sourceTree = "<group>"; };
 		269DA82A275EA1D700A93034 /* CircleAndLabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAndLabelViewModel.swift; sourceTree = "<group>"; };
 		269DA82D275EA1DC00A93034 /* CircleAndLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleAndLabelView.xib; sourceTree = "<group>"; };
-		269DA832275EA59800A93034 /* CircleAndLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAndLabelCollectionViewCell.swift; sourceTree = "<group>"; };
-		269DA833275EA59800A93034 /* CircleAndLabelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleAndLabelCollectionViewCell.xib; sourceTree = "<group>"; };
 		26A61EAE275E334900E4327E /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		26A61EBA275E3A8D00E4327E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		26A61EC0275E3AB600E4327E /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
@@ -380,21 +376,11 @@
 		269DA825275EA1B300A93034 /* CircleAndLabelView */ = {
 			isa = PBXGroup;
 			children = (
-				269DA830275EA56F00A93034 /* CircleAndLabelCollectionViewCell */,
 				269DA826275EA1D000A93034 /* CircleAndLabelView.swift */,
 				269DA82A275EA1D700A93034 /* CircleAndLabelViewModel.swift */,
 				269DA82D275EA1DC00A93034 /* CircleAndLabelView.xib */,
 			);
 			path = CircleAndLabelView;
-			sourceTree = "<group>";
-		};
-		269DA830275EA56F00A93034 /* CircleAndLabelCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				269DA832275EA59800A93034 /* CircleAndLabelCollectionViewCell.swift */,
-				269DA833275EA59800A93034 /* CircleAndLabelCollectionViewCell.xib */,
-			);
-			path = CircleAndLabelCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		26A61EB3275E3A5400E4327E /* DetailsViewController */ = {
@@ -608,7 +594,6 @@
 				269DA814275E97A400A93034 /* Details.storyboard in Resources */,
 				26B48E92275A46A7000915B7 /* Assets.xcassets in Resources */,
 				269DA823275E9EBF00A93034 /* WorkInformationView.xib in Resources */,
-				269DA835275EA59800A93034 /* CircleAndLabelCollectionViewCell.xib in Resources */,
 				269032CE275B577200915B2B /* ServiceAreasView.xib in Resources */,
 				261C9BE9275BD94000944551 /* PopularSubjectCustomCollectionViewCell.xib in Resources */,
 				26A61ED8275E408800E4327E /* IconAndTitleView.xib in Resources */,
@@ -702,7 +687,6 @@
 				2655305E275A4B5500487B38 /* Colors.swift in Sources */,
 				2655306B275A4CD900487B38 /* HomeViewController.swift in Sources */,
 				2655305B275A4B3B00487B38 /* UIColorThemeExtension.swift in Sources */,
-				269DA834275EA59800A93034 /* CircleAndLabelCollectionViewCell.swift in Sources */,
 				26B48E8B275A46A6000915B7 /* SceneDelegate.swift in Sources */,
 				26A61ECD275E3DFD00E4327E /* ServiceAndDetailsViewModel.swift in Sources */,
 				26A61EC1275E3AB600E4327E /* DetailsViewModel.swift in Sources */,

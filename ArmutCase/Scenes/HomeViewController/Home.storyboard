@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="390" height="722"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wl4-zR-QSd" userLabel="Holder View">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="2000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1720"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMD-8U-S6P" userLabel="Search View" customClass="SearchView" customModule="ArmutCase" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="20" width="350" height="350"/>
@@ -72,9 +72,9 @@
                                             <constraint firstItem="zmr-Ij-vZR" firstAttribute="top" secondItem="gsr-Lt-SUK" secondAttribute="bottom" constant="50" id="aUD-Qd-v7e"/>
                                             <constraint firstItem="gsr-Lt-SUK" firstAttribute="leading" secondItem="Wl4-zR-QSd" secondAttribute="leading" constant="20" id="ctW-wS-uMd"/>
                                             <constraint firstAttribute="trailing" secondItem="yMD-8U-S6P" secondAttribute="trailing" constant="20" id="doK-gp-hrS"/>
-                                            <constraint firstAttribute="height" constant="2000" id="eHZ-6V-GvE"/>
                                             <constraint firstAttribute="trailing" secondItem="y3h-Gx-5Wo" secondAttribute="trailing" constant="20" id="eQ6-9G-ghA"/>
                                             <constraint firstItem="yMD-8U-S6P" firstAttribute="leading" secondItem="Wl4-zR-QSd" secondAttribute="leading" constant="20" id="uCV-34-Wgw"/>
+                                            <constraint firstAttribute="bottom" secondItem="8bm-OL-Gei" secondAttribute="bottom" constant="50" id="unc-U8-7hl"/>
                                             <constraint firstItem="zmr-Ij-vZR" firstAttribute="leading" secondItem="Wl4-zR-QSd" secondAttribute="leading" constant="20" id="vRG-Ck-S76"/>
                                         </constraints>
                                     </view>
