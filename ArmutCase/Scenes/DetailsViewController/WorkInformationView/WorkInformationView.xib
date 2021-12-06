@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkInformationView" customModule="ArmutCase" customModuleProvider="target">
+            <connections>
+                <outlet property="firstCircleView" destination="JKd-jU-1Qy" id="YEg-7v-nl2"/>
+                <outlet property="secondCircleView" destination="1w0-5x-YtP" id="2Tf-Ho-CuS"/>
+                <outlet property="thirdCircleView" destination="JKI-Fx-oTS" id="kS2-5e-5QR"/>
+                <outlet property="titleLabel" destination="Xd2-zw-dJt" id="1jw-gQ-MAO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpG-xY-9bc" userLabel="Holder View">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="180"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xd2-zw-dJt">
+                            <rect key="frame" x="10" y="10" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tma-7Q-Saa">
+                            <rect key="frame" x="15" y="20" width="344" height="128"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKd-jU-1Qy" customClass="CircleAndLabelView" customModule="ArmutCase" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="114.5" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1w0-5x-YtP" customClass="CircleAndLabelView" customModule="ArmutCase" customModuleProvider="target">
+                                    <rect key="frame" x="114.5" y="0.0" width="115" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKI-Fx-oTS" customClass="CircleAndLabelView" customModule="ArmutCase" customModuleProvider="target">
+                                    <rect key="frame" x="229.5" y="0.0" width="114.5" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="g1v-je-VYy"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Xd2-zw-dJt" firstAttribute="top" secondItem="fpG-xY-9bc" secondAttribute="top" constant="10" id="YRQ-Cs-TtO"/>
+                        <constraint firstItem="Xd2-zw-dJt" firstAttribute="leading" secondItem="fpG-xY-9bc" secondAttribute="leading" constant="10" id="aIm-oN-IEi"/>
+                        <constraint firstAttribute="trailing" secondItem="tma-7Q-Saa" secondAttribute="trailing" constant="15" id="kkq-LF-fpO"/>
+                        <constraint firstItem="tma-7Q-Saa" firstAttribute="leading" secondItem="fpG-xY-9bc" secondAttribute="leading" constant="15" id="mVY-pN-b6o"/>
+                        <constraint firstItem="tma-7Q-Saa" firstAttribute="top" secondItem="Xd2-zw-dJt" secondAttribute="bottom" constant="10" id="uYi-ZR-Gip"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fpG-xY-9bc" secondAttribute="bottom" id="4MG-Of-AnY"/>
+                <constraint firstAttribute="trailing" secondItem="fpG-xY-9bc" secondAttribute="trailing" id="Lhz-vx-NkN"/>
+                <constraint firstItem="fpG-xY-9bc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rXR-RD-4EP"/>
+                <constraint firstItem="fpG-xY-9bc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vuE-20-EJd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-164" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

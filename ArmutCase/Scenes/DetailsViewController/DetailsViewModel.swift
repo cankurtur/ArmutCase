@@ -9,6 +9,7 @@ import Foundation
 
 struct DetailsViewModel {
     let networking = Networking()
+    let workAndInformationViewModel = WorkInformationViewModel.init()
 
     // MARK: - Business Logic
     func fetchDetailsData(serviceID: Int, completion: @escaping(DetailsUIModel) -> Void) {
