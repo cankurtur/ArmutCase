@@ -12,6 +12,9 @@ class PopularSubjectsView: UIView {
     struct Constants {
         static let popularSubjectsCollectionViewCelldentifier: String = "cuctomPopularSubjectCell"
         static let popularSubjectsCollectionViewCellNibName: String = "PopularSubjectCustomCollectionViewCell"
+        static let collectionViewItemSpacing: CGFloat = 30
+        static let collectionViewCellWidth: Int = 150
+        static let collectionViewCellHeight: Int = 190
     }
 
     // MARK: - IBOutlets
@@ -47,6 +50,11 @@ class PopularSubjectsView: UIView {
             UINib(nibName: Constants.popularSubjectsCollectionViewCellNibName, bundle: nil),
             forCellWithReuseIdentifier: Constants.popularSubjectsCollectionViewCelldentifier
         )
+        popularSubjectsCollectionView.giveSpacingAndSizeForCollectionView(
+            space: Constants.collectionViewItemSpacing,
+            itemWidth: Constants.collectionViewCellWidth,
+            itemHeight: Constants.collectionViewCellHeight
+        )
     }
 
     func configure(viewModel: PopularSubjectsViewModel) {
@@ -54,7 +62,6 @@ class PopularSubjectsView: UIView {
         self.titleLabel.text = viewModel.titleText
         self.contentArray = viewModel.contents
         popularSubjectsCollectionView.reloadData()
-        popularSubjectsCollectionView.collectionViewLayout = viewModel.createLayout()
     }
 }
 
