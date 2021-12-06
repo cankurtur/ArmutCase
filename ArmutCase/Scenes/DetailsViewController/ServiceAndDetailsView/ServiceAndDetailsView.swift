@@ -37,6 +37,14 @@ class ServiceAndDetailsView: UIView {
         let view = nibInstantiate(autoResizingMask: [.flexibleHeight, .flexibleWidth])
         view.frame = self.bounds
         addSubview(view)
+        setupTableView()
+    }
+
+    private func setupTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: Constants.tableViewCellNibName, bundle: nil), forCellReuseIdentifier: Constants.tableViewCellIdentifier)
+        tableView.separatorColor = .clear
     }
 
     func configure(viewModel: ServiceAndDetailsViewModel) {

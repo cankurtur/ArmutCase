@@ -22,7 +22,7 @@ struct ServiceAndDetailsViewModel {
         let iconAndTitleDataArray: [IconAndTitleViewModel] = [
             IconAndTitleViewModel(icon: .professionalNumberOrangeIcon, title: "\(detailsUIModel.proCount) pros near you"),
             IconAndTitleViewModel(icon: .starAverageIcon, title: "\(detailsUIModel.averageRating) avarage rating"),
-            IconAndTitleViewModel(icon: .jobDoneOrangeIcon, title: "Last month \(detailsUIModel.completedJobsOnLastMonth) cleaning job completed"),
+            IconAndTitleViewModel(icon: .jobDoneOrangeIcon, title: "Last month \(detailsUIModel.completedJobsOnLastMonth) job completed"),
             IconAndTitleViewModel(icon: .useFreeOrangeIcon, title: "Free of charge"),
             IconAndTitleViewModel(icon: .serviceGuaranteeOrangeIcon, title: "Service Guaranteed")
         ]
