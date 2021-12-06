@@ -10,8 +10,8 @@ import UIKit
 class ServiceAreasView: UIView {
     // MARK: - Constants
     struct Constants {
-        static let buttonAndTitleCollectionViewCellIdentifier: String = "customButtonAndTitleCell"
-        static let buttonAndTitleCollectionViewCellNibName: String = "ButtonAndTitleCollectionViewCell"
+        static let imageAndTitleCollectionViewCellIdentifier: String = "customImageAndTitleCell"
+        static let imageAndTitleCollectionViewCellNibName: String = "ImageAndTitleCollectionViewCell"
     }
 
     // MARK: - IBOutlets
@@ -19,7 +19,7 @@ class ServiceAreasView: UIView {
     @IBOutlet private weak var serviceAreasCollectionView: UICollectionView!
 
     // MARK: - Properties
-    private var elementArray: [ButtonAndTitleViewModel]?
+    private var elementArray: [ImageAndTitleViewModel]?
 
     // MARK: - Business Logic
     override init(frame: CGRect) {
@@ -43,15 +43,15 @@ class ServiceAreasView: UIView {
         serviceAreasCollectionView.delegate = self
         serviceAreasCollectionView.dataSource = self
         serviceAreasCollectionView.register(
-            UINib(nibName: Constants.buttonAndTitleCollectionViewCellNibName, bundle: nil),
-            forCellWithReuseIdentifier: Constants.buttonAndTitleCollectionViewCellIdentifier
+            UINib(nibName: Constants.imageAndTitleCollectionViewCellNibName, bundle: nil),
+            forCellWithReuseIdentifier: Constants.imageAndTitleCollectionViewCellIdentifier
         )
 
     }
 
     func configure(viewModel: ServiceAreasViewModel) {
         titleLabel.text = viewModel.titleText
-        elementArray = viewModel.content
+        elementArray = viewModel.getContents()
         serviceAreasCollectionView.reloadData()
         serviceAreasCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         serviceAreasCollectionView.collectionViewLayout = viewModel.createLayout()
@@ -66,14 +66,14 @@ extension ServiceAreasView: UICollectionViewDelegate, UICollectionViewDataSource
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = serviceAreasCollectionView.dequeueReusableCell(
-            withReuseIdentifier: Constants.buttonAndTitleCollectionViewCellIdentifier,
+            withReuseIdentifier: Constants.imageAndTitleCollectionViewCellIdentifier,
             for: indexPath
-        ) as? ButtonAndTitleCollectionViewCell else {
-            return ButtonAndTitleCollectionViewCell()
+        ) as? ImageAndTitleCollectionViewCell else {
+            return ImageAndTitleCollectionViewCell()
         }
 
         if let safeElementArray = elementArray {
-            cell.configure(buttonAndTitleViewModel: safeElementArray[indexPath.row])
+            cell.configure(imageAndTitleViewModel: safeElementArray[indexPath.row])
         }
         return cell
     }
