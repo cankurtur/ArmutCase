@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QPP-T3-09D">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Details View Controller-->
+        <scene sceneID="bCK-g9-Cc5">
+            <objects>
+                <viewController id="QPP-T3-09D" customClass="DetailsViewController" customModule="ArmutCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WNr-c7-eN9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Saq-Gx-2Ft" userLabel="Holder View">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZL-EL-U10" customClass="ServiceAndDetailsView" customModule="ArmutCase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="UHy-ik-ydq"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JS2-Pp-la0" customClass="WorkInformationView" customModule="ArmutCase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="420" width="414" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="0ZQ-VZ-TQl"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSI-lW-mVf">
+                                        <rect key="frame" x="50" y="728" width="314" height="36"/>
+                                        <color key="backgroundColor" name="campaignGreen"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="DEVAM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DSI-lW-mVf" secondAttribute="bottom" constant="10" id="1oO-My-Tvq"/>
+                                    <constraint firstAttribute="trailing" secondItem="DSI-lW-mVf" secondAttribute="trailing" constant="50" id="BcS-xk-TfO"/>
+                                    <constraint firstAttribute="trailing" secondItem="JS2-Pp-la0" secondAttribute="trailing" id="DGt-cF-mda"/>
+                                    <constraint firstItem="JS2-Pp-la0" firstAttribute="top" secondItem="SZL-EL-U10" secondAttribute="bottom" constant="20" id="fK8-Tx-ylv"/>
+                                    <constraint firstItem="SZL-EL-U10" firstAttribute="top" secondItem="Saq-Gx-2Ft" secondAttribute="top" id="gfj-s2-Kgt"/>
+                                    <constraint firstItem="SZL-EL-U10" firstAttribute="leading" secondItem="Saq-Gx-2Ft" secondAttribute="leading" id="i9P-m2-GPO"/>
+                                    <constraint firstItem="JS2-Pp-la0" firstAttribute="leading" secondItem="Saq-Gx-2Ft" secondAttribute="leading" id="qfO-Pf-DMp"/>
+                                    <constraint firstItem="DSI-lW-mVf" firstAttribute="leading" secondItem="Saq-Gx-2Ft" secondAttribute="leading" constant="50" id="wze-de-abU"/>
+                                    <constraint firstAttribute="trailing" secondItem="SZL-EL-U10" secondAttribute="trailing" id="x5Z-xL-knU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YBA-hL-Bgs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YBA-hL-Bgs" firstAttribute="bottom" secondItem="Saq-Gx-2Ft" secondAttribute="bottom" id="1wr-j1-spC"/>
+                            <constraint firstItem="Saq-Gx-2Ft" firstAttribute="top" secondItem="YBA-hL-Bgs" secondAttribute="top" id="H3c-vv-mvQ"/>
+                            <constraint firstItem="YBA-hL-Bgs" firstAttribute="trailing" secondItem="Saq-Gx-2Ft" secondAttribute="trailing" id="TN8-ef-NQv"/>
+                            <constraint firstItem="Saq-Gx-2Ft" firstAttribute="leading" secondItem="YBA-hL-Bgs" secondAttribute="leading" id="xG1-4r-TOY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ft4-Da-A4l"/>
+                    <connections>
+                        <outlet property="serviceAndDetailsView" destination="SZL-EL-U10" id="fVU-nH-uEZ"/>
+                        <outlet property="workInformationView" destination="JS2-Pp-la0" id="94L-Jn-LjK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tu6-Fb-OMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.73913043478262" y="-97.098214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iJu-Sr-QrB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QfU-4T-hPs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CmG-ft-gON">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QPP-T3-09D" kind="relationship" relationship="rootViewController" id="JK0-Ia-hAh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fue-td-OIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88.405797101449281" y="-97.098214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="campaignGreen">
+            <color red="0.15000000596046448" green="0.55900001525878906" blue="0.25999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

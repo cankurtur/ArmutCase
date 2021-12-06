@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
     // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        serviceAreasView.delegate = self
         setupBindings()
     }
 
@@ -64,4 +65,19 @@ class HomeViewController: UIViewController {
         let latestBlogViewModel = LatestBlogViewModel(postUIModel: posts)
         latestBlogView.configure(viewModel: latestBlogViewModel)
     }
+}
+
+// MARK: - Presentable Delegate
+extension HomeViewController: Presentable {
+    func presentDetails(id: Int) {
+        showDetailsVC(id: id)
+    }
+
+    private func showDetailsVC(id: Int) {
+        if let detailsVC = UIStoryboard(name: "Details", bundle: nil).instantiateInitialViewController() as? DetailsViewController {
+            detailsVC.serviceID = id
+            navigationController?.pushViewController(detailsVC, animated: true)
+        }
+    }
+
 }

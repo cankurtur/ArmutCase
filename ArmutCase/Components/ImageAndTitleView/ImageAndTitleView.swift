@@ -1,24 +1,24 @@
 //
-//  ButtonAndTitleView.swift
+//  ImageAndTitleView.swift
 //  ArmutCase
 //
-//  Created by Can Kurtur on 4.12.2021.
+//  Created by Can Kurtur on 6.12.2021.
 //
 
 import UIKit
 
-class ButtonAndTitleView: UIView {
+class ImageAndTitleView: UIView {
     // MARK: - Constant
     private struct Constants {
         static let cornerRadius: CGFloat = 8
     }
-    
-    // MARK: - IBOutlets
-    @IBOutlet private weak var serviceButton: UIButton!
-    @IBOutlet private weak var serviceTitle: UILabel!
 
+    // MARK: - IBOutlets
+    @IBOutlet private weak var serviceImageView: UIImageView!
+    @IBOutlet private weak var serviceTitle: UILabel!
+ 
     // MARK: - Properties
-    private var viewModel: ButtonAndTitleViewModel?
+    private var viewModel: ImageAndTitleViewModel?
 
     // MARK: - Business Logic
     override init(frame: CGRect) {
@@ -44,15 +44,10 @@ class ButtonAndTitleView: UIView {
         layer.masksToBounds = true
     }
 
-    func configure(viewModel: ButtonAndTitleViewModel) {
+    func configure(viewModel: ImageAndTitleViewModel) {
         self.viewModel = viewModel
-        serviceButton.setImage(viewModel.buttonImage, for: .normal)
-        serviceTitle.text = viewModel.buttonTitleText
-    }
 
-    @IBAction func buttonClicked() {
-        guard let action = viewModel?.clickAction else { return }
-
-        action()
+        serviceImageView.image = viewModel.serviceImage
+        serviceTitle.text = viewModel.serviceText
     }
 }

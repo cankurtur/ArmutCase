@@ -9,43 +9,42 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customButtonAndTitleCell" id="gTV-IL-0wX" customClass="ButtonAndTitleCollectionViewCell" customModule="ArmutCase" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customImageAndTitleCell" id="gTV-IL-0wX" customClass="ImageAndTitleCollectionViewCell" customModule="ArmutCase" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpl-MH-UVu" userLabel="Holder View">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPL-D5-N1b" userLabel="Holder View">
                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCl-6U-UvF" customClass="ButtonAndTitleView" customModule="ArmutCase" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pE2-0S-Xz2" customClass="ImageAndTitleView" customModule="ArmutCase" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="QCl-6U-UvF" firstAttribute="leading" secondItem="Dpl-MH-UVu" secondAttribute="leading" id="HAI-qy-CGT"/>
-                            <constraint firstAttribute="trailing" secondItem="QCl-6U-UvF" secondAttribute="trailing" id="o3j-qm-TCk"/>
-                            <constraint firstItem="QCl-6U-UvF" firstAttribute="top" secondItem="Dpl-MH-UVu" secondAttribute="top" id="ojX-lg-xtM"/>
-                            <constraint firstAttribute="bottom" secondItem="QCl-6U-UvF" secondAttribute="bottom" id="rVB-oh-K9m"/>
+                            <constraint firstAttribute="bottom" secondItem="pE2-0S-Xz2" secondAttribute="bottom" id="cqM-oe-Ycs"/>
+                            <constraint firstItem="pE2-0S-Xz2" firstAttribute="leading" secondItem="IPL-D5-N1b" secondAttribute="leading" id="dOO-5K-2A7"/>
+                            <constraint firstItem="pE2-0S-Xz2" firstAttribute="top" secondItem="IPL-D5-N1b" secondAttribute="top" id="haw-uF-NqH"/>
+                            <constraint firstAttribute="trailing" secondItem="pE2-0S-Xz2" secondAttribute="trailing" id="xNN-kO-YRx"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Dpl-MH-UVu" secondAttribute="bottom" id="1YK-Lp-On5"/>
-                <constraint firstItem="Dpl-MH-UVu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CKH-NI-MFi"/>
-                <constraint firstItem="Dpl-MH-UVu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GDG-OL-AYV"/>
-                <constraint firstAttribute="trailing" secondItem="Dpl-MH-UVu" secondAttribute="trailing" id="iyY-7p-lPk"/>
+                <constraint firstItem="IPL-D5-N1b" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5qw-uS-I1k"/>
+                <constraint firstItem="IPL-D5-N1b" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TP2-zP-Dbt"/>
+                <constraint firstAttribute="bottom" secondItem="IPL-D5-N1b" secondAttribute="bottom" id="WfK-QU-JWq"/>
+                <constraint firstAttribute="trailing" secondItem="IPL-D5-N1b" secondAttribute="trailing" id="lTt-wl-JTt"/>
             </constraints>
-            <size key="customSize" width="83" height="79"/>
             <connections>
-                <outlet property="buttonAndTitleView" destination="QCl-6U-UvF" id="FGk-R6-Nf6"/>
+                <outlet property="imageAndTitleView" destination="pE2-0S-Xz2" id="xAJ-6P-x7w"/>
             </connections>
-            <point key="canvasLocation" x="132.60869565217394" y="143.63839285714286"/>
+            <point key="canvasLocation" x="62" y="105"/>
         </collectionViewCell>
     </objects>
 </document>

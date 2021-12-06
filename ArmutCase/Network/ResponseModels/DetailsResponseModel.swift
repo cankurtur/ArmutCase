@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DetailsResponseModel: Decodable {
+struct DetailsResponseModel: Codable {
     let id: Int
     let serviceID: Int
     let name: String

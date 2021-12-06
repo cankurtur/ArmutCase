@@ -18,43 +18,27 @@ struct ServiceAreasViewModel {
 
     // MARK: - Properties
     let titleText: String
-    let content: [ButtonAndTitleViewModel]
     var serviceUIModel: [ServicesUIModel]
 
     // MARK: - Initializers
     init(serviceUIModel: [ServicesUIModel]) {
         self.serviceUIModel = serviceUIModel
-
         self.titleText = "All services"
-        self.content = [
-            ButtonAndTitleViewModel(buttonImage: .renovationIcon, buttonTitleText: serviceUIModel[0].name, clickAction: {
-                print("Test1")
-            }),
-            ButtonAndTitleViewModel(buttonImage: .cleaningIcon, buttonTitleText: serviceUIModel[1].name, clickAction: {
-                print("Test2")
-            }),
-            ButtonAndTitleViewModel(buttonImage: .transportationIcon, buttonTitleText: serviceUIModel[2].name, clickAction: {
-                print("Test3")
-            }),
-            ButtonAndTitleViewModel(buttonImage: .fixIcon, buttonTitleText: serviceUIModel[3].name, clickAction: {
-                print("Test4")
-            }),
-            ButtonAndTitleViewModel(buttonImage: .privateLessonIcon, buttonTitleText: serviceUIModel[4].name, clickAction: {
-                print("Test5")
-            }),
-            ButtonAndTitleViewModel(buttonImage: .healthIcon, buttonTitleText: serviceUIModel[5].name.splitTheFirstWord(), clickAction: {
-                print("Test6")
-            }),
-            ButtonAndTitleViewModel(buttonImage: .weddingIcon, buttonTitleText: serviceUIModel[6].name.splitTheFirstWord(), clickAction: {
-                print("Test7")
-            }),
-            ButtonAndTitleViewModel(buttonImage: .otherIcon, buttonTitleText: serviceUIModel[7].name, clickAction: {
-                print("Test8")
-            }),
-
-        ]
     }
 
+    func getContents() -> [ImageAndTitleViewModel] {
+        let content = [
+            ImageAndTitleViewModel(serviceImage: .renovationIcon, serviceText: serviceUIModel[0].name, serviceID: serviceUIModel[0].serviceID),
+            ImageAndTitleViewModel(serviceImage: .cleaningIcon, serviceText: serviceUIModel[1].name, serviceID: serviceUIModel[1].serviceID),
+            ImageAndTitleViewModel(serviceImage: .transportationIcon, serviceText: serviceUIModel[2].name, serviceID: serviceUIModel[2].serviceID),
+            ImageAndTitleViewModel(serviceImage: .fixIcon, serviceText: serviceUIModel[3].name, serviceID: serviceUIModel[3].serviceID),
+            ImageAndTitleViewModel(serviceImage: .privateLessonIcon, serviceText: serviceUIModel[4].name, serviceID: serviceUIModel[4].serviceID),
+            ImageAndTitleViewModel(serviceImage: .healthIcon, serviceText: serviceUIModel[5].name.splitTheFirstWord(), serviceID: serviceUIModel[5].serviceID),
+            ImageAndTitleViewModel(serviceImage: .weddingIcon, serviceText: serviceUIModel[6].name.splitTheFirstWord(), serviceID: serviceUIModel[6].serviceID),
+            ImageAndTitleViewModel(serviceImage: .otherIcon, serviceText: serviceUIModel[7].name, serviceID: serviceUIModel[7].serviceID),
+        ]
+        return content
+    }
 
     // MARK: - Business Logic
     func createLayout() -> UICollectionViewCompositionalLayout {
