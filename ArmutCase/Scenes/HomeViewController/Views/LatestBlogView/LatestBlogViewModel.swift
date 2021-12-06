@@ -8,14 +8,6 @@
 import UIKit
 
 struct LatestBlogViewModel {
-    // MARK: - Constants
-    struct Constants {
-        static let collectionLayoutItemFracSize: CGFloat = 1
-        static let collectionLayoutGroupHeight: CGFloat = 1
-        static let itemCount: Int = 2
-        static let contentInstes: NSDirectionalEdgeInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20)
-    }
-
     // MARK: - Properties
     let titleText: String
     let contents: [LatestBlogDataModel]
