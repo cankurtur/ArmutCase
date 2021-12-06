@@ -6,3 +6,22 @@
 //
 
 import Foundation
+
+struct DetailsViewModel {
+    let networking = Networking()
+
+    // MARK: - Business Logic
+    func fetchDetailsData(serviceID: Int, completion: @escaping(DetailsUIModel) -> Void) {
+        let detailsEndPoint = APIConstants.detailsURL + "\(serviceID)"
+
+        networking.performRequest(url: detailsEndPoint) { (result: Result<DetailsResponseModel, Error>) in
+            switch result {
+            case .success(let detailsResponseModel):
+                let detailsUIModel = DetailsUIModel.init(from: detailsResponseModel)
+                completion(detailsUIModel)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+}

@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol Presentable: AnyObject {
+    func presentDetails(id: Int)
+}
+
 class ServiceAreasView: UIView {
     // MARK: - Constants
     struct Constants {
@@ -20,6 +24,8 @@ class ServiceAreasView: UIView {
 
     // MARK: - Properties
     private var elementArray: [ImageAndTitleViewModel]?
+    var model: ServiceAreasViewModel?
+    weak var delegate: Presentable?
 
     // MARK: - Business Logic
     override init(frame: CGRect) {
@@ -76,5 +82,11 @@ extension ServiceAreasView: UICollectionViewDelegate, UICollectionViewDataSource
             cell.configure(imageAndTitleViewModel: safeElementArray[indexPath.row])
         }
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let elementArray = elementArray {
+            delegate?.presentDetails(id: elementArray[indexPath.row].serviceID)
+        }
     }
 }

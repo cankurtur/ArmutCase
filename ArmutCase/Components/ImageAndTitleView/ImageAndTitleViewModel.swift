@@ -10,4 +10,5 @@ import UIKit
 struct ImageAndTitleViewModel {
     let serviceImage: UIImage
     let serviceText: String
+    let serviceID: Int
 }
