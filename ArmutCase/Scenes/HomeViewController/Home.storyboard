@@ -50,6 +50,13 @@
                                                     <constraint firstAttribute="height" constant="250" id="SqA-kx-cse"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bm-OL-Gei" customClass="LatestBlogView" customModule="ArmutCase" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="1270" width="350" height="400"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="RkJ-85-Pwh"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -57,8 +64,11 @@
                                             <constraint firstItem="yMD-8U-S6P" firstAttribute="top" secondItem="Wl4-zR-QSd" secondAttribute="top" constant="20" id="8v7-ki-Klk"/>
                                             <constraint firstItem="y3h-Gx-5Wo" firstAttribute="top" secondItem="yMD-8U-S6P" secondAttribute="bottom" constant="50" id="JvR-co-AtX"/>
                                             <constraint firstItem="gsr-Lt-SUK" firstAttribute="top" secondItem="y3h-Gx-5Wo" secondAttribute="bottom" constant="50" id="Jzw-zy-hgU"/>
+                                            <constraint firstItem="8bm-OL-Gei" firstAttribute="top" secondItem="zmr-Ij-vZR" secondAttribute="bottom" constant="50" id="OaD-gn-rgf"/>
+                                            <constraint firstItem="8bm-OL-Gei" firstAttribute="leading" secondItem="Wl4-zR-QSd" secondAttribute="leading" constant="20" id="U5H-qh-HpE"/>
                                             <constraint firstAttribute="trailing" secondItem="zmr-Ij-vZR" secondAttribute="trailing" constant="20" id="WTI-eq-l7k"/>
                                             <constraint firstItem="y3h-Gx-5Wo" firstAttribute="leading" secondItem="Wl4-zR-QSd" secondAttribute="leading" constant="20" id="WW5-wi-XxA"/>
+                                            <constraint firstAttribute="trailing" secondItem="8bm-OL-Gei" secondAttribute="trailing" constant="20" id="XiG-y5-o6B"/>
                                             <constraint firstItem="zmr-Ij-vZR" firstAttribute="top" secondItem="gsr-Lt-SUK" secondAttribute="bottom" constant="50" id="aUD-Qd-v7e"/>
                                             <constraint firstItem="gsr-Lt-SUK" firstAttribute="leading" secondItem="Wl4-zR-QSd" secondAttribute="leading" constant="20" id="ctW-wS-uMd"/>
                                             <constraint firstAttribute="trailing" secondItem="yMD-8U-S6P" secondAttribute="trailing" constant="20" id="doK-gp-hrS"/>
@@ -91,6 +101,7 @@
                     </view>
                     <connections>
                         <outlet property="campaignView" destination="y3h-Gx-5Wo" id="0F2-tF-0gG"/>
+                        <outlet property="latestBlogView" destination="8bm-OL-Gei" id="TNA-57-qzG"/>
                         <outlet property="popularSubjectsView" destination="zmr-Ij-vZR" id="ma4-xB-RLC"/>
                         <outlet property="searchView" destination="yMD-8U-S6P" id="zrC-Zd-XbA"/>
                         <outlet property="serviceAreasView" destination="gsr-Lt-SUK" id="QQL-cd-Bd6"/>

@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var campaignView: CampaignView!
     @IBOutlet private weak var serviceAreasView: ServiceAreasView!
     @IBOutlet private weak var popularSubjectsView: PopularSubjectsView!
+    @IBOutlet private weak var latestBlogView: LatestBlogView!
 
     // MARK: - Properties
     private var viewModel = HomeViewModel()
@@ -40,6 +41,7 @@ class HomeViewController: UIViewController {
     private func configureViewsWithData(model: HomeUIModel) {
         configureServiceAreasView(model: model)
         configurePopularSubjectsView(model: model)
+        configureLatestBlogView(model: model)
     }
 
     private func configureServiceAreasView(model: HomeUIModel) {
@@ -54,5 +56,12 @@ class HomeViewController: UIViewController {
 
         let popularSubjectsViewModel = PopularSubjectsViewModel(servicesUIModel: popularServices)
         popularSubjectsView.configure(viewModel: popularSubjectsViewModel)
+    }
+
+    private func configureLatestBlogView(model: HomeUIModel) {
+        guard let posts = model.posts else { return }
+
+        let latestBlogViewModel = LatestBlogViewModel(postUIModel: posts)
+        latestBlogView.configure(viewModel: latestBlogViewModel)
     }
 }
