@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopularSubjectsView" customModule="ArmutCase" customModuleProvider="target">
+            <connections>
+                <outlet property="popularSubjectsCollectionView" destination="aET-9q-zZQ" id="Vbu-eK-Ana"/>
+                <outlet property="titleLabel" destination="o5q-xC-tft" id="bR0-MW-yUg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="o5q-xC-tft">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="0.0"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="aET-9q-zZQ">
+                    <rect key="frame" x="0.0" y="15" width="374" height="185"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5qo-Wg-Ala">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="o5q-xC-tft" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8xF-YF-uqd"/>
+                <constraint firstItem="aET-9q-zZQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="M7Z-97-ngd"/>
+                <constraint firstItem="aET-9q-zZQ" firstAttribute="top" secondItem="o5q-xC-tft" secondAttribute="bottom" constant="15" id="Sna-y6-UCe"/>
+                <constraint firstAttribute="trailing" secondItem="aET-9q-zZQ" secondAttribute="trailing" id="TH0-Ms-Lta"/>
+                <constraint firstItem="o5q-xC-tft" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ULB-Pk-tS2"/>
+                <constraint firstAttribute="trailing" secondItem="o5q-xC-tft" secondAttribute="trailing" id="dBo-9F-L3L"/>
+                <constraint firstAttribute="bottom" secondItem="aET-9q-zZQ" secondAttribute="bottom" id="wXx-eC-C6Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="88.28125" y="287.109375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
