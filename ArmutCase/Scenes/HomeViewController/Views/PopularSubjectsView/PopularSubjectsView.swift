@@ -19,7 +19,7 @@ class PopularSubjectsView: UIView {
     @IBOutlet private weak var popularSubjectsCollectionView: UICollectionView!
 
     // MARK: - Properties
-    private var contentArray: [PopularSubjectsDataModel]?
+    private var contentArray: [ContentSubjectsDataModel]?
     private var model: PopularSubjectsViewModel?
 
     // MARK: - Business Logic

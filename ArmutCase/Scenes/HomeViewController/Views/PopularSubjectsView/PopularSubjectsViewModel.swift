@@ -18,7 +18,7 @@ struct PopularSubjectsViewModel {
 
     // MARK: - Properties
     let titleText: String
-    let contents: [PopularSubjectsDataModel]
+    let contents: [ContentSubjectsDataModel]
     var servicesUIModel: [ServicesUIModel]
 
     // MARK: - Initializers
@@ -27,10 +27,10 @@ struct PopularSubjectsViewModel {
 
         self.titleText = "Popular these days"
 
-        var popularDataArray: [PopularSubjectsDataModel] = []
+        var popularDataArray: [ContentSubjectsDataModel] = []
 
         for service in servicesUIModel {
-            let popularSubjectDataModel = PopularSubjectsDataModel.init(
+            let popularSubjectDataModel = ContentSubjectsDataModel.init(
                 customImageViewModel: CustomImageViewModel.init(
                     imageLink: service.imageURL ?? ""
                 ),

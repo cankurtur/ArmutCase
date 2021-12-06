@@ -17,7 +17,7 @@
 		261C9BE3275BD7AB00944551 /* PopularSubjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261C9BE2275BD7AB00944551 /* PopularSubjectsViewModel.swift */; };
 		261C9BE8275BD94000944551 /* PopularSubjectCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261C9BE6275BD94000944551 /* PopularSubjectCustomCollectionViewCell.swift */; };
 		261C9BE9275BD94000944551 /* PopularSubjectCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261C9BE7275BD94000944551 /* PopularSubjectCustomCollectionViewCell.xib */; };
-		261C9BF1275CD54A00944551 /* PopularSubjectsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261C9BF0275CD54A00944551 /* PopularSubjectsDataModel.swift */; };
+		261C9BF1275CD54A00944551 /* ContentSubjectsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261C9BF0275CD54A00944551 /* ContentSubjectsDataModel.swift */; };
 		264E2C78275B8C7D00C2E55D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E2C77275B8C7D00C2E55D /* Networking.swift */; };
 		264E2C7C275B8DEC00C2E55D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E2C7B275B8DEC00C2E55D /* APIConstants.swift */; };
 		264E2C80275B8E5D00C2E55D /* HomeResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E2C7F275B8E5D00C2E55D /* HomeResponseModel.swift */; };
@@ -63,7 +63,7 @@
 		261C9BE2275BD7AB00944551 /* PopularSubjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSubjectsViewModel.swift; sourceTree = "<group>"; };
 		261C9BE6275BD94000944551 /* PopularSubjectCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSubjectCustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		261C9BE7275BD94000944551 /* PopularSubjectCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularSubjectCustomCollectionViewCell.xib; sourceTree = "<group>"; };
-		261C9BF0275CD54A00944551 /* PopularSubjectsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSubjectsDataModel.swift; sourceTree = "<group>"; };
+		261C9BF0275CD54A00944551 /* ContentSubjectsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSubjectsDataModel.swift; sourceTree = "<group>"; };
 		264E2C77275B8C7D00C2E55D /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		264E2C7B275B8DEC00C2E55D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		264E2C7F275B8E5D00C2E55D /* HomeResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseModel.swift; sourceTree = "<group>"; };
@@ -139,7 +139,6 @@
 				261C9BE5275BD92000944551 /* PopularSubjectCustomCollectionViewCell */,
 				261C9BDB275BD79D00944551 /* PopularSubjectsView.swift */,
 				261C9BE2275BD7AB00944551 /* PopularSubjectsViewModel.swift */,
-				261C9BF0275CD54A00944551 /* PopularSubjectsDataModel.swift */,
 				261C9BDF275BD7A300944551 /* PopularSubjectsView.xib */,
 			);
 			path = PopularSubjectsView;
@@ -342,12 +341,21 @@
 				26553046275A48B800487B38 /* Application */,
 				26841598275A48D800378DD9 /* Scenes */,
 				26553049275A48F500487B38 /* Components */,
+				26CB83B6275DF74500C37912 /* DataModels */,
 				264E2C76275B8C7200C2E55D /* Network */,
 				2655304A275A48FD00487B38 /* Theme */,
 				2655304B275A490100487B38 /* Utility */,
 				26B48E96275A46A7000915B7 /* Info.plist */,
 			);
 			path = ArmutCase;
+			sourceTree = "<group>";
+		};
+		26CB83B6275DF74500C37912 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				261C9BF0275CD54A00944551 /* ContentSubjectsDataModel.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 		A297358BD99749B844746C7A /* Frameworks */ = {
@@ -492,7 +500,7 @@
 			files = (
 				264E2C78275B8C7D00C2E55D /* Networking.swift in Sources */,
 				26194C8F275A5846007E4753 /* CampaignView.swift in Sources */,
-				261C9BF1275CD54A00944551 /* PopularSubjectsDataModel.swift in Sources */,
+				261C9BF1275CD54A00944551 /* ContentSubjectsDataModel.swift in Sources */,
 				26194C93275A5850007E4753 /* CampaignViewModel.swift in Sources */,
 				264E2C87275BA98A00C2E55D /* HomeUIModel.swift in Sources */,
 				26553078275A4F6B00487B38 /* SearchViewModel.swift in Sources */,
