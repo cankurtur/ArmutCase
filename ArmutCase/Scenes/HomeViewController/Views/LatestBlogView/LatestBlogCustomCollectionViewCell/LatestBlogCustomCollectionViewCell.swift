@@ -22,7 +22,7 @@ class LatestBlogCustomCollectionViewCell: UICollectionViewCell {
     // MARK: - Life Cycles
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupUI()
     }
 
     // MARK: - Business Logic

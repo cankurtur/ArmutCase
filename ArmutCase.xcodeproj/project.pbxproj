@@ -44,6 +44,7 @@
 		269032DC275B57ED00915B2B /* ButtonAndTitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269032DB275B57ED00915B2B /* ButtonAndTitleViewModel.swift */; };
 		269032E6275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269032E4275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.swift */; };
 		269032E7275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269032E5275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.xib */; };
+		26A61EAF275E334900E4327E /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A61EAE275E334900E4327E /* UICollectionViewExtension.swift */; };
 		26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E88275A46A6000915B7 /* AppDelegate.swift */; };
 		26B48E8B275A46A6000915B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E8A275A46A6000915B7 /* SceneDelegate.swift */; };
 		26B48E90275A46A6000915B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B48E8E275A46A6000915B7 /* Main.storyboard */; };
@@ -96,6 +97,7 @@
 		269032DB275B57ED00915B2B /* ButtonAndTitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAndTitleViewModel.swift; sourceTree = "<group>"; };
 		269032E4275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAndTitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		269032E5275B5A2F00915B2B /* ButtonAndTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonAndTitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		26A61EAE275E334900E4327E /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		26B48E85275A46A6000915B7 /* ArmutCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmutCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B48E88275A46A6000915B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26B48E8A275A46A6000915B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			children = (
 				26553061275A4BB700487B38 /* UIViewExtension.swift */,
 				264E2C98275BC70500C2E55D /* StringExtension.swift */,
+				26A61EAE275E334900E4327E /* UICollectionViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				26CB83BA275DF7EF00C37912 /* LatestBlogView.swift in Sources */,
 				269032CA275B576900915B2B /* ServiceAreasView.swift in Sources */,
 				261C9BE8275BD94000944551 /* PopularSubjectCustomCollectionViewCell.swift in Sources */,
+				26A61EAF275E334900E4327E /* UICollectionViewExtension.swift in Sources */,
 				264E2C84275B8E6900C2E55D /* DetailsResponseModel.swift in Sources */,
 				269032D1275B577A00915B2B /* ServiceAreasViewModel.swift in Sources */,
 				26553075275A4F6000487B38 /* SearchView.swift in Sources */,

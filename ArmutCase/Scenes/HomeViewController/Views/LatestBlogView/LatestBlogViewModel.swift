@@ -24,7 +24,6 @@ struct LatestBlogViewModel {
     // MARK: - Initializers
     init(postUIModel: [PostUIModel]) {
         self.postUIModel = postUIModel
-
         self.titleText = "Latests from the blog"
 
         var latestBlogDataArray: [LatestBlogDataModel] = []
@@ -35,34 +34,11 @@ struct LatestBlogViewModel {
                     imageLink: post.imageURL
                 ),
                 titleText: post.title,
-                categoryText: post.category
+                categoryText: post.category,
+                link: post.link
             )
             latestBlogDataArray.append(latestBlogDataModel)
         }
         self.contents = latestBlogDataArray
     }
-
-    // MARK: - Business Logic
-//    func createLayout() -> UICollectionViewCompositionalLayout {
-//        let item = NSCollectionLayoutItem(
-//            layoutSize: NSCollectionLayoutSize(
-//                widthDimension: .fractionalWidth(1),
-//                heightDimension: .fractionalHeight(1)
-//            )
-//        )
-//
-//        item.contentInsets = Constants.contentInstes
-//
-//        let group = NSCollectionLayoutGroup.horizontal(
-//            layoutSize: NSCollectionLayoutSize(
-//                widthDimension: .fractionalWidth(1),
-//                heightDimension: .fractionalHeight(1)
-//            ),
-//            subitem: item,
-//            count: 2
-//        )
-//
-//        let section = NSCollectionLayoutSection(group: group)
-//        return UICollectionViewCompositionalLayout(section: section)
-//    }
 }
