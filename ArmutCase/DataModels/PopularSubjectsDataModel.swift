@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ContentSubjectsDataModel {
+struct PopularSubjectsDataModel {
     // MARK: - Properties
     let customImageViewModel: CustomImageViewModel
     let subjectText: String

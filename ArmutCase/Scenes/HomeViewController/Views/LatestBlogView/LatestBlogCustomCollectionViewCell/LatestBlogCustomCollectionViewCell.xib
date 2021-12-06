@@ -15,9 +15,59 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2S-gd-QnQ" userLabel="Holder View">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gPl-z0-B7k" customClass="CustomImageView" customModule="ArmutCase" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="FJy-EG-nFo">
+                                <rect key="frame" x="8" y="147" width="184" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-Md-bQU">
+                                <rect key="frame" x="8" y="162" width="184" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="rpd-fg-WgO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ci2-Md-bQU" secondAttribute="trailing" constant="8" id="16d-Lg-eNG"/>
+                            <constraint firstAttribute="bottom" secondItem="gPl-z0-B7k" secondAttribute="bottom" id="6kB-xP-8Jm"/>
+                            <constraint firstItem="gPl-z0-B7k" firstAttribute="leading" secondItem="b2S-gd-QnQ" secondAttribute="leading" id="8sh-FT-665"/>
+                            <constraint firstAttribute="bottom" secondItem="ci2-Md-bQU" secondAttribute="bottom" constant="8" id="Bid-Q1-zTB"/>
+                            <constraint firstAttribute="trailing" secondItem="FJy-EG-nFo" secondAttribute="trailing" constant="8" id="CgU-Sh-1r6"/>
+                            <constraint firstItem="ci2-Md-bQU" firstAttribute="top" secondItem="FJy-EG-nFo" secondAttribute="bottom" constant="15" id="FwX-cB-k0g"/>
+                            <constraint firstItem="ci2-Md-bQU" firstAttribute="leading" secondItem="b2S-gd-QnQ" secondAttribute="leading" constant="8" id="Wr5-rv-AQR"/>
+                            <constraint firstItem="FJy-EG-nFo" firstAttribute="leading" secondItem="b2S-gd-QnQ" secondAttribute="leading" constant="8" id="cEZ-hO-BYL"/>
+                            <constraint firstAttribute="trailing" secondItem="gPl-z0-B7k" secondAttribute="trailing" id="g78-Gu-s4w"/>
+                            <constraint firstItem="gPl-z0-B7k" firstAttribute="top" secondItem="b2S-gd-QnQ" secondAttribute="top" id="lCm-HO-EUu"/>
+                        </constraints>
+                    </view>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <point key="canvasLocation" x="112" y="110"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="b2S-gd-QnQ" secondAttribute="bottom" id="7KA-yJ-tdX"/>
+                <constraint firstAttribute="trailing" secondItem="b2S-gd-QnQ" secondAttribute="trailing" id="D5H-Jr-rWi"/>
+                <constraint firstItem="b2S-gd-QnQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RKs-EI-vE0"/>
+                <constraint firstItem="b2S-gd-QnQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qeh-gW-Z19"/>
+            </constraints>
+            <connections>
+                <outlet property="categoryTitleLabel" destination="FJy-EG-nFo" id="Qcs-4b-i82"/>
+                <outlet property="customImageView" destination="gPl-z0-B7k" id="vI8-s7-FYV"/>
+                <outlet property="holderView" destination="b2S-gd-QnQ" id="h8r-ma-zi9"/>
+                <outlet property="subjectTitleLabel" destination="ci2-Md-bQU" id="Q4j-d1-WyE"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="109.82142857142857"/>
         </collectionViewCell>
     </objects>
 </document>

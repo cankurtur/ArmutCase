@@ -29,7 +29,7 @@ class PopularSubjectCustomCollectionViewCell: UICollectionViewCell {
         imageHolderView.layer.masksToBounds = true
     }
 
-    func configure(dataModel: ContentSubjectsDataModel) {
+    func configure(dataModel: PopularSubjectsDataModel) {
         customImageView.configure(viewModel: dataModel.customImageViewModel)
         subjectLabel.text = dataModel.subjectText
     }

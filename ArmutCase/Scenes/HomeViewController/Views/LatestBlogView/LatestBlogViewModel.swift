@@ -18,7 +18,7 @@ struct LatestBlogViewModel {
 
     // MARK: - Properties
     let titleText: String
-    let contents: [ContentSubjectsDataModel]
+    let contents: [LatestBlogDataModel]
     var postUIModel: [PostUIModel]
 
     // MARK: - Initializers
@@ -27,14 +27,15 @@ struct LatestBlogViewModel {
 
         self.titleText = "Latests from the blog"
 
-        var latestBlogDataArray: [ContentSubjectsDataModel] = []
+        var latestBlogDataArray: [LatestBlogDataModel] = []
 
         for post in postUIModel {
-            let latestBlogDataModel = ContentSubjectsDataModel.init(
+            let latestBlogDataModel = LatestBlogDataModel.init(
                 customImageViewModel: CustomImageViewModel.init(
-                    imageLink: post.imageURL ?? ""
+                    imageLink: post.imageURL
                 ),
-                subjectText: post.title
+                titleText: post.title,
+                categoryText: post.category
             )
             latestBlogDataArray.append(latestBlogDataModel)
         }
@@ -42,26 +43,26 @@ struct LatestBlogViewModel {
     }
 
     // MARK: - Business Logic
-    func createLayout() -> UICollectionViewCompositionalLayout {
-        let item = NSCollectionLayoutItem(
-            layoutSize: NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalHeight(1)
-            )
-        )
-
-        item.contentInsets = Constants.contentInstes
-
-        let group = NSCollectionLayoutGroup.horizontal(
-            layoutSize: NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalHeight(1)
-            ),
-            subitem: item,
-            count: 2
-        )
-
-        let section = NSCollectionLayoutSection(group: group)
-        return UICollectionViewCompositionalLayout(section: section)
-    }
+//    func createLayout() -> UICollectionViewCompositionalLayout {
+//        let item = NSCollectionLayoutItem(
+//            layoutSize: NSCollectionLayoutSize(
+//                widthDimension: .fractionalWidth(1),
+//                heightDimension: .fractionalHeight(1)
+//            )
+//        )
+//
+//        item.contentInsets = Constants.contentInstes
+//
+//        let group = NSCollectionLayoutGroup.horizontal(
+//            layoutSize: NSCollectionLayoutSize(
+//                widthDimension: .fractionalWidth(1),
+//                heightDimension: .fractionalHeight(1)
+//            ),
+//            subitem: item,
+//            count: 2
+//        )
+//
+//        let section = NSCollectionLayoutSection(group: group)
+//        return UICollectionViewCompositionalLayout(section: section)
+//    }
 }

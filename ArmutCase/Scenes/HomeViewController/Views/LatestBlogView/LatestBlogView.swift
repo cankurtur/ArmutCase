@@ -18,7 +18,7 @@ class LatestBlogView: UIView {
     @IBOutlet private weak var latestBlogCollectionView: UICollectionView!
 
     // MARK: - Properties
-    private var contentArray: [ContentSubjectsDataModel]?
+    private var contentArray: [LatestBlogDataModel]?
     private var model: LatestBlogViewModel?
 
     // MARK: - Business Logic
@@ -53,7 +53,7 @@ class LatestBlogView: UIView {
         self.titleLabel.text = viewModel.titleText
         self.contentArray = viewModel.contents
         latestBlogCollectionView.reloadData()
-        latestBlogCollectionView.collectionViewLayout = viewModel.createLayout()
+        //latestBlogCollectionView.collectionViewLayout = viewModel.createLayout()
     }
 }
 
