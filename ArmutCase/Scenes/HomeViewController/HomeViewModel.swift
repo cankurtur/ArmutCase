@@ -27,4 +27,11 @@ struct HomeViewModel {
             }
         }
     }
+
+    func showDetailsVC(vc: HomeViewController, id: Int) {
+        if let detailsVC = UIStoryboard(name: "Details", bundle: nil).instantiateInitialViewController() as? DetailsViewController {
+            detailsVC.serviceID = id
+            vc.present(detailsVC, animated: true, completion: nil)
+        }
+    }
 }

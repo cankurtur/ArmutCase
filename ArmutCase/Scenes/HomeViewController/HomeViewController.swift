@@ -84,10 +84,7 @@ extension HomeViewController: Presentable {
         showDetailsVC(id: id)
     }
 
-    private func showDetailsVC(id: Int) {
-        if let detailsVC = UIStoryboard(name: "Details", bundle: nil).instantiateInitialViewController() as? DetailsViewController {
-            detailsVC.serviceID = id
-            self.present(detailsVC, animated: true, completion: nil)
-        }
+    func showDetailsVC(id: Int) {
+        viewModel.showDetailsVC(vc: self, id: id)
     }
 }
