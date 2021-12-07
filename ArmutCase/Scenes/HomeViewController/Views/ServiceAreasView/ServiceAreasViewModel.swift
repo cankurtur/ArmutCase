@@ -11,7 +11,7 @@ struct ServiceAreasViewModel {
 
     // MARK: - Constants
 
-    struct Constants {
+    private struct Constants {
         static let collectionLayoutItemFracSize: CGFloat = 1
         static let collectionLayoutGroupHeight: CGFloat = 0.5
         static let itemCount: Int = 4

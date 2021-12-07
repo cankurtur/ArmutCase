@@ -14,6 +14,8 @@ class DetailsViewModel {
     let networking: Networking
     let workAndInformationViewModel = WorkInformationViewModel()
 
+    // MARK: - Initializer
+
     public init(networking: Networking) {
         self.networking = networking
     }
