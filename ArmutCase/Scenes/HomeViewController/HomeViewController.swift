@@ -25,11 +25,16 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTextFieldHiding()
         serviceAreaDelegate()
         setupBindings()
     }
 
     // MARK: - Setup
+
+    private func setupTextFieldHiding() {
+        self.hideKeyboardWhenTappedAround()
+    }
 
     private func serviceAreaDelegate() {
         serviceAreasView.delegate = self

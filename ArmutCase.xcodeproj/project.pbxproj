@@ -74,6 +74,7 @@
 		26CB83C7275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB83C5275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.swift */; };
 		26CB83C8275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CB83C6275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.xib */; };
 		26CB83CC275DFEB100C37912 /* LatestBlogDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB83CB275DFEB100C37912 /* LatestBlogDataModel.swift */; };
+		26E85466275FEC4600723B58 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E85465275FEC4600723B58 /* UIViewControllerExtension.swift */; };
 		C6FAADEA15C092E680F900AF /* Pods_ArmutCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CF7B5D5A7B6DA6185D6BAD /* Pods_ArmutCase.framework */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +148,7 @@
 		26CB83C5275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestBlogCustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		26CB83C6275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestBlogCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		26CB83CB275DFEB100C37912 /* LatestBlogDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestBlogDataModel.swift; sourceTree = "<group>"; };
+		26E85465275FEC4600723B58 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5D40C56B7641B6DF7C16F0B3 /* Pods-ArmutCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmutCase.debug.xcconfig"; path = "Target Support Files/Pods-ArmutCase/Pods-ArmutCase.debug.xcconfig"; sourceTree = "<group>"; };
 		A0CF7B5D5A7B6DA6185D6BAD /* Pods_ArmutCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmutCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83B15EE6AEF1A8877285239 /* Pods-ArmutCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmutCase.release.xcconfig"; path = "Target Support Files/Pods-ArmutCase/Pods-ArmutCase.release.xcconfig"; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				26553061275A4BB700487B38 /* UIViewExtension.swift */,
 				264E2C98275BC70500C2E55D /* StringExtension.swift */,
 				26A61EAE275E334900E4327E /* UICollectionViewExtension.swift */,
+				26E85465275FEC4600723B58 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 				26553075275A4F6000487B38 /* SearchView.swift in Sources */,
 				26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */,
 				26553071275A4CFA00487B38 /* HomeViewModel.swift in Sources */,
+				26E85466275FEC4600723B58 /* UIViewControllerExtension.swift in Sources */,
 				26CB83CC275DFEB100C37912 /* LatestBlogDataModel.swift in Sources */,
 				261C9BE3275BD7AB00944551 /* PopularSubjectsViewModel.swift in Sources */,
 				26A61EEC275E6F9B00E4327E /* ImageAndTitleViewModel.swift in Sources */,
