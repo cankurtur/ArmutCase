@@ -25,11 +25,15 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        serviceAreasView.delegate = self
+        serviceAreaDelegate()
         setupBindings()
     }
 
     // MARK: - Setup
+
+    private func serviceAreaDelegate() {
+        serviceAreasView.delegate = self
+    }
 
     private func setupBindings() {
         configureViews()

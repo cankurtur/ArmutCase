@@ -6,7 +6,6 @@
 //
 
 import Alamofire
-//import SwiftMessages
 import UIKit
 
 class DetailsViewController: UIViewController {
@@ -63,10 +62,5 @@ extension DetailsViewController: ServiceErrorDelegate {
     func networking(_ networking: Networking, didThrow error: AFError) {
         emptyView.isHidden = false
         emptyView.isHidden = false
-//        self.workInformationView.isHidden = true
-//        let view = MessageView.viewFromNib(layout: .cardView)
-//        view.configureTheme(.info)
-//        view.configureContent(body: "Something went wrong")
-//        SwiftMessages.show(view: view)
     }
 }

@@ -16,6 +16,7 @@ protocol ServiceErrorDelegate: AnyObject {
 class Networking {
 
     //MARK: - Properties
+    static let shared = Networking()
 
     weak var delegate: ServiceErrorDelegate?
 
@@ -26,7 +27,6 @@ class Networking {
         AF.request(url, method: .get).validate().response { responseData in
             if responseData.error != nil {
                 self.delegate?.networking(self, didThrow: responseData.error!)
-                print(responseData.error)
             } else {
                 do {
                     guard let data = responseData.data else { return }
