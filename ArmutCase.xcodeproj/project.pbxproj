@@ -411,8 +411,8 @@
 			isa = PBXGroup;
 			children = (
 				26A61ED3275E407C00E4327E /* IconAndTitleView.swift */,
-				26A61ED7275E408800E4327E /* IconAndTitleView.xib */,
 				26A61EDA275E409000E4327E /* IconAndTitleViewModel.swift */,
+				26A61ED7275E408800E4327E /* IconAndTitleView.xib */,
 			);
 			path = IconAndTitleView;
 			sourceTree = "<group>";
