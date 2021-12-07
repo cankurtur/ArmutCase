@@ -47,7 +47,7 @@
                                 <constraint firstAttribute="height" constant="200" id="yBA-yx-3UB"/>
                             </constraints>
                         </view>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-Li-X5p" customClass="AutoSizedTableView" customModule="ArmutCase" customModuleProvider="target">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="35" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJL-Li-X5p" customClass="AutoSizedTableView" customModule="ArmutCase" customModuleProvider="target">
                             <rect key="frame" x="20" y="215" width="334" height="100"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>

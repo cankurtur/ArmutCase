@@ -30,18 +30,18 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tma-7Q-Saa">
-                            <rect key="frame" x="15" y="20" width="344" height="128"/>
+                            <rect key="frame" x="10" y="20" width="339" height="128"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKd-jU-1Qy" customClass="CircleAndLabelView" customModule="ArmutCase" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="114.5" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="113" height="128"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1w0-5x-YtP" customClass="CircleAndLabelView" customModule="ArmutCase" customModuleProvider="target">
-                                    <rect key="frame" x="114.5" y="0.0" width="115" height="128"/>
+                                    <rect key="frame" x="113" y="0.0" width="113" height="128"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKI-Fx-oTS" customClass="CircleAndLabelView" customModule="ArmutCase" customModuleProvider="target">
-                                    <rect key="frame" x="229.5" y="0.0" width="114.5" height="128"/>
+                                    <rect key="frame" x="226" y="0.0" width="113" height="128"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                             </subviews>
@@ -54,8 +54,8 @@
                     <constraints>
                         <constraint firstItem="Xd2-zw-dJt" firstAttribute="top" secondItem="fpG-xY-9bc" secondAttribute="top" constant="10" id="YRQ-Cs-TtO"/>
                         <constraint firstItem="Xd2-zw-dJt" firstAttribute="leading" secondItem="fpG-xY-9bc" secondAttribute="leading" constant="10" id="aIm-oN-IEi"/>
-                        <constraint firstAttribute="trailing" secondItem="tma-7Q-Saa" secondAttribute="trailing" constant="15" id="kkq-LF-fpO"/>
-                        <constraint firstItem="tma-7Q-Saa" firstAttribute="leading" secondItem="fpG-xY-9bc" secondAttribute="leading" constant="15" id="mVY-pN-b6o"/>
+                        <constraint firstAttribute="trailing" secondItem="tma-7Q-Saa" secondAttribute="trailing" constant="25" id="kkq-LF-fpO"/>
+                        <constraint firstItem="tma-7Q-Saa" firstAttribute="leading" secondItem="fpG-xY-9bc" secondAttribute="leading" constant="10" id="mVY-pN-b6o"/>
                         <constraint firstItem="tma-7Q-Saa" firstAttribute="top" secondItem="Xd2-zw-dJt" secondAttribute="bottom" constant="10" id="uYi-ZR-Gip"/>
                     </constraints>
                 </view>
