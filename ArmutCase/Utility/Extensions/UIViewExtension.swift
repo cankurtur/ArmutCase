@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIView {
+    /// This method is used to run, start the UIView
     func nibInstantiate(autoResizingMask: UIView.AutoresizingMask = []) -> UIView {
         let bundle = Bundle(for: Self.self)
         let nib = bundle.loadNibNamed(String(describing: Self.self), owner: self, options: nil)

@@ -8,7 +8,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+
     // MARK: - IBOutlets
+
     @IBOutlet private weak var searchView: SearchView!
     @IBOutlet private weak var campaignView: CampaignView!
     @IBOutlet private weak var serviceAreasView: ServiceAreasView!
@@ -16,23 +18,36 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var latestBlogView: LatestBlogView!
 
     // MARK: - Properties
+
     private var viewModel = HomeViewModel()
 
     // MARK: - Life Cycles
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        serviceAreasView.delegate = self
+        setupTextFieldHiding()
+        serviceAreaDelegate()
         setupBindings()
     }
 
-    // MARK: - Business Logic
+    // MARK: - Setup
+
+    private func setupTextFieldHiding() {
+        self.hideKeyboardWhenTappedAround()
+    }
+
+    private func serviceAreaDelegate() {
+        serviceAreasView.delegate = self
+    }
+
     private func setupBindings() {
         configureViews()
-
         viewModel.fetchHomeData { homeUIModel in
             self.configureViewsWithData(model: homeUIModel)
         }
     }
+
+    // MARK: - Business Logic
 
     private func configureViews() {
         searchView.configure(viewModel: viewModel.searchViewModel)
@@ -68,16 +83,13 @@ class HomeViewController: UIViewController {
 }
 
 // MARK: - Presentable Delegate
+
 extension HomeViewController: Presentable {
     func presentDetails(id: Int) {
         showDetailsVC(id: id)
     }
 
-    private func showDetailsVC(id: Int) {
-        if let detailsVC = UIStoryboard(name: "Details", bundle: nil).instantiateInitialViewController() as? DetailsViewController {
-            detailsVC.serviceID = id
-            navigationController?.pushViewController(detailsVC, animated: true)
-        }
+    func showDetailsVC(id: Int) {
+        viewModel.showDetailsVC(vc: self, id: id)
     }
-
 }

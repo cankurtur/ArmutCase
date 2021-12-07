@@ -65,7 +65,6 @@
 		26A61EF8275E735000E4327E /* ImageAndTitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A61EF6275E735000E4327E /* ImageAndTitleCollectionViewCell.swift */; };
 		26A61EF9275E735000E4327E /* ImageAndTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26A61EF7275E735000E4327E /* ImageAndTitleCollectionViewCell.xib */; };
 		26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E88275A46A6000915B7 /* AppDelegate.swift */; };
-		26B48E8B275A46A6000915B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B48E8A275A46A6000915B7 /* SceneDelegate.swift */; };
 		26B48E90275A46A6000915B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B48E8E275A46A6000915B7 /* Main.storyboard */; };
 		26B48E92275A46A7000915B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B48E91275A46A7000915B7 /* Assets.xcassets */; };
 		26B48E95275A46A7000915B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B48E93275A46A7000915B7 /* LaunchScreen.storyboard */; };
@@ -75,6 +74,7 @@
 		26CB83C7275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB83C5275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.swift */; };
 		26CB83C8275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CB83C6275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.xib */; };
 		26CB83CC275DFEB100C37912 /* LatestBlogDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB83CB275DFEB100C37912 /* LatestBlogDataModel.swift */; };
+		26E85466275FEC4600723B58 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E85465275FEC4600723B58 /* UIViewControllerExtension.swift */; };
 		C6FAADEA15C092E680F900AF /* Pods_ArmutCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CF7B5D5A7B6DA6185D6BAD /* Pods_ArmutCase.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,7 +138,6 @@
 		26A61EF7275E735000E4327E /* ImageAndTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAndTitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		26B48E85275A46A6000915B7 /* ArmutCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmutCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B48E88275A46A6000915B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26B48E8A275A46A6000915B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		26B48E8F275A46A6000915B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26B48E91275A46A7000915B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26B48E94275A46A7000915B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,6 +148,7 @@
 		26CB83C5275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestBlogCustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		26CB83C6275DFA2800C37912 /* LatestBlogCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestBlogCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		26CB83CB275DFEB100C37912 /* LatestBlogDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestBlogDataModel.swift; sourceTree = "<group>"; };
+		26E85465275FEC4600723B58 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5D40C56B7641B6DF7C16F0B3 /* Pods-ArmutCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmutCase.debug.xcconfig"; path = "Target Support Files/Pods-ArmutCase/Pods-ArmutCase.debug.xcconfig"; sourceTree = "<group>"; };
 		A0CF7B5D5A7B6DA6185D6BAD /* Pods_ArmutCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmutCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83B15EE6AEF1A8877285239 /* Pods-ArmutCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmutCase.release.xcconfig"; path = "Target Support Files/Pods-ArmutCase/Pods-ArmutCase.release.xcconfig"; sourceTree = "<group>"; };
@@ -228,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				26B48E88275A46A6000915B7 /* AppDelegate.swift */,
-				26B48E8A275A46A6000915B7 /* SceneDelegate.swift */,
 				26B48E93275A46A7000915B7 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
@@ -297,6 +296,7 @@
 				26553061275A4BB700487B38 /* UIViewExtension.swift */,
 				264E2C98275BC70500C2E55D /* StringExtension.swift */,
 				26A61EAE275E334900E4327E /* UICollectionViewExtension.swift */,
+				26E85465275FEC4600723B58 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -676,6 +676,7 @@
 				26553075275A4F6000487B38 /* SearchView.swift in Sources */,
 				26B48E89275A46A6000915B7 /* AppDelegate.swift in Sources */,
 				26553071275A4CFA00487B38 /* HomeViewModel.swift in Sources */,
+				26E85466275FEC4600723B58 /* UIViewControllerExtension.swift in Sources */,
 				26CB83CC275DFEB100C37912 /* LatestBlogDataModel.swift in Sources */,
 				261C9BE3275BD7AB00944551 /* PopularSubjectsViewModel.swift in Sources */,
 				26A61EEC275E6F9B00E4327E /* ImageAndTitleViewModel.swift in Sources */,
@@ -687,7 +688,6 @@
 				2655305E275A4B5500487B38 /* Colors.swift in Sources */,
 				2655306B275A4CD900487B38 /* HomeViewController.swift in Sources */,
 				2655305B275A4B3B00487B38 /* UIColorThemeExtension.swift in Sources */,
-				26B48E8B275A46A6000915B7 /* SceneDelegate.swift in Sources */,
 				26A61ECD275E3DFD00E4327E /* ServiceAndDetailsViewModel.swift in Sources */,
 				26A61EC1275E3AB600E4327E /* DetailsViewModel.swift in Sources */,
 				26553062275A4BB700487B38 /* UIViewExtension.swift in Sources */,

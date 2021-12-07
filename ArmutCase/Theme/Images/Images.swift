@@ -8,7 +8,9 @@
 import UIKit
 
 class Images {
+
     // MARK: - Properties
+    
     static let cleaningIcon: UIImage = getImage(imageName: "cleaningIcon")
     static let dummyImage: UIImage = getImage(imageName: "dummyImage")
     static let fixIcon: UIImage = getImage(imageName: "fixIcon")

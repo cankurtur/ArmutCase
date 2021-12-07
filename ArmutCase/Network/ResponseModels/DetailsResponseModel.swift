@@ -27,5 +27,4 @@ struct DetailsResponseModel: Codable {
         case averageRating = "average_rating"
         case completedJobsOnLastMonth = "completed_jobs_on_last_month"
     }
-
 }

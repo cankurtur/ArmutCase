@@ -8,7 +8,9 @@
 import UIKit
 
 struct ServiceAreasViewModel {
+
     // MARK: - Constants
+
     struct Constants {
         static let collectionLayoutItemFracSize: CGFloat = 1
         static let collectionLayoutGroupHeight: CGFloat = 0.5
@@ -17,15 +19,20 @@ struct ServiceAreasViewModel {
     }
 
     // MARK: - Properties
+
     let titleText: String
     var serviceUIModel: [ServicesUIModel]
 
     // MARK: - Initializers
+
     init(serviceUIModel: [ServicesUIModel]) {
         self.serviceUIModel = serviceUIModel
         self.titleText = "All services"
     }
 
+    // MARK: - Business Logic
+
+    /// This function return the contents that includes the ImageAndTitleViewModel.
     func getContents() -> [ImageAndTitleViewModel] {
         let content = [
             ImageAndTitleViewModel(serviceImage: .renovationIcon, serviceText: serviceUIModel[0].name, serviceID: serviceUIModel[0].serviceID),
@@ -39,8 +46,8 @@ struct ServiceAreasViewModel {
         ]
         return content
     }
-
-    // MARK: - Business Logic
+    
+    /// This function create and return the compositional layout for CollectionView.
     func createLayout() -> UICollectionViewCompositionalLayout {
         let item = NSCollectionLayoutItem(
             layoutSize: NSCollectionLayoutSize(

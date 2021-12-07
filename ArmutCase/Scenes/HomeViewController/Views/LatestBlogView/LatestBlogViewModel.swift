@@ -8,21 +8,23 @@
 import UIKit
 
 struct LatestBlogViewModel {
+
     // MARK: - Properties
+
     let titleText: String
     let contents: [LatestBlogDataModel]
     var postUIModel: [PostUIModel]
 
     // MARK: - Initializers
+
     init(postUIModel: [PostUIModel]) {
         self.postUIModel = postUIModel
         self.titleText = "Latests from the blog"
-
         var latestBlogDataArray: [LatestBlogDataModel] = []
 
         for post in postUIModel {
-            let latestBlogDataModel = LatestBlogDataModel.init(
-                customImageViewModel: CustomImageViewModel.init(
+            let latestBlogDataModel = LatestBlogDataModel(
+                customImageViewModel: CustomImageViewModel(
                     imageLink: post.imageURL
                 ),
                 titleText: post.title,
@@ -32,5 +34,11 @@ struct LatestBlogViewModel {
             latestBlogDataArray.append(latestBlogDataModel)
         }
         self.contents = latestBlogDataArray
+    }
+
+    // MARK: - Business Logic
+
+    func openLink(url: URL) {
+        UIApplication.shared.openURL(url)
     }
 }

@@ -8,10 +8,13 @@
 import Foundation
 
 struct CustomImageViewModel {
+
     // MARK: - Properties
+
     let imageLink: String
 
     // MARK: - Business Logic
+    
     init(imageLink: String) {
         self.imageLink = imageLink
     }

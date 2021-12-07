@@ -8,12 +8,16 @@
 import UIKit
 
 struct CampaignViewModel {
+
     // MARK: - Properties
+
     let campaignImage: UIImage
     let campaignTitleText: String
     let campaignOfferText: String
     let discountText: String
 
+    // MARK: - Initializer
+    
     init() {
         self.campaignImage =  .weddingImage
         self.campaignTitleText = "FIRST TIME NEWLY WEDS"

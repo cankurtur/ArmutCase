@@ -8,7 +8,9 @@
 import UIKit
 
 class PopularSubjectsView: UIView {
+
     // MARK: - Constants
+
     struct Constants {
         static let popularSubjectsCollectionViewCelldentifier: String = "cuctomPopularSubjectCell"
         static let popularSubjectsCollectionViewCellNibName: String = "PopularSubjectCustomCollectionViewCell"
@@ -18,14 +20,17 @@ class PopularSubjectsView: UIView {
     }
 
     // MARK: - IBOutlets
+
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var popularSubjectsCollectionView: UICollectionView!
 
     // MARK: - Properties
+
     private var contentArray: [PopularSubjectsDataModel]?
     private var model: PopularSubjectsViewModel?
 
-    // MARK: - Business Logic
+    // MARK: - Setup
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -57,6 +62,8 @@ class PopularSubjectsView: UIView {
         )
     }
 
+    // MARK: - Business Logic
+
     func configure(viewModel: PopularSubjectsViewModel) {
         self.model = viewModel
         self.titleLabel.text = viewModel.titleText
@@ -66,6 +73,7 @@ class PopularSubjectsView: UIView {
 }
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
+
 extension PopularSubjectsView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return contentArray?.count ?? 0

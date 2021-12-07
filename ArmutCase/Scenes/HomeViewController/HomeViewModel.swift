@@ -8,22 +8,30 @@
 import UIKit
 
 struct HomeViewModel {
+
     // MARK: - Properties
-    let networking = Networking()
 
     let searchViewModel = SearchViewModel()
     let campaignViewModel = CampaignViewModel()
     
     // MARK: - Business Logic
+
     func fetchHomeData(completion: @escaping(HomeUIModel) -> Void) {
-        networking.performRequest(url: APIConstants.homeURL) { (result: Result<HomeResponseModel, Error>) in
+            Networking.shared.performRequest(url: APIConstants.homeURL) { (result: Result<HomeResponseModel, Error>) in
             switch result {
             case .success(let homeResponseModel):
-                let homeUIModel = HomeUIModel.init(from: homeResponseModel)
+                let homeUIModel = HomeUIModel(from: homeResponseModel)
                 completion(homeUIModel)
             case .failure(let error):
                 print(error)
             }
+        }
+    }
+
+    func showDetailsVC(vc: HomeViewController, id: Int) {
+        if let detailsVC = UIStoryboard(name: "Details", bundle: nil).instantiateInitialViewController() as? DetailsViewController {
+            detailsVC.serviceID = id
+            vc.present(detailsVC, animated: true, completion: nil)
         }
     }
 }

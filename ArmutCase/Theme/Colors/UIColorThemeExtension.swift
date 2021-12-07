@@ -8,7 +8,9 @@
 import UIKit
 
 extension UIColor {
+    
     // MARK: - Properties
+    
     static let almostWhite = Colors.almostWhite
     static let campaignGreen = Colors.campaignGreen
 }
