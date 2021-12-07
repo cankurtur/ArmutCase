@@ -8,11 +8,13 @@
 import Foundation
 
 struct WorkInformationViewModel {
+    // MARK: - Properties
     let titleText: String
     let firstCircleModel: CircleAndLabelViewModel
     let secondCircleModel: CircleAndLabelViewModel
     let thirdCircleModel: CircleAndLabelViewModel
-
+    
+    // MARK: - Initializer
     init() {
         titleText = "How it works"
         firstCircleModel = CircleAndLabelViewModel(circleNumberText: "1", stepText: "Answer the questions")

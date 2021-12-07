@@ -17,7 +17,6 @@ struct LatestBlogViewModel {
     init(postUIModel: [PostUIModel]) {
         self.postUIModel = postUIModel
         self.titleText = "Latests from the blog"
-
         var latestBlogDataArray: [LatestBlogDataModel] = []
 
         for post in postUIModel {
@@ -32,5 +31,10 @@ struct LatestBlogViewModel {
             latestBlogDataArray.append(latestBlogDataModel)
         }
         self.contents = latestBlogDataArray
+    }
+
+    // MARK: - Business Logic
+    func openLink(url: URL) {
+        UIApplication.shared.openURL(url)
     }
 }

@@ -27,4 +27,3 @@ extension UIImage {
     static let weddingIcon = Images.weddingIcon
     static let weddingImage = Images.weddingImage
 }
-

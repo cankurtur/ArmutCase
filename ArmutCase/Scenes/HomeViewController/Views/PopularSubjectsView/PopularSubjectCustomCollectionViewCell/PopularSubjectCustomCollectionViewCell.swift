@@ -12,6 +12,7 @@ class PopularSubjectCustomCollectionViewCell: UICollectionViewCell {
     private struct Constants {
         static let cornerRadius: CGFloat = 8
     }
+    
     // MARK: - IBOutlets
     @IBOutlet private weak var imageHolderView: UIView!
     @IBOutlet private weak var customImageView: CustomImageView!

@@ -13,7 +13,7 @@ protocol Presentable: AnyObject {
 
 class ServiceAreasView: UIView {
     // MARK: - Constants
-    struct Constants {
+    private struct Constants {
         static let imageAndTitleCollectionViewCellIdentifier: String = "customImageAndTitleCell"
         static let imageAndTitleCollectionViewCellNibName: String = "ImageAndTitleCollectionViewCell"
     }
@@ -24,7 +24,7 @@ class ServiceAreasView: UIView {
 
     // MARK: - Properties
     private var elementArray: [ImageAndTitleViewModel]?
-    var model: ServiceAreasViewModel?
+    private var model: ServiceAreasViewModel?
     weak var delegate: Presentable?
 
     // MARK: - Business Logic
@@ -52,7 +52,6 @@ class ServiceAreasView: UIView {
             UINib(nibName: Constants.imageAndTitleCollectionViewCellNibName, bundle: nil),
             forCellWithReuseIdentifier: Constants.imageAndTitleCollectionViewCellIdentifier
         )
-
     }
 
     func configure(viewModel: ServiceAreasViewModel) {

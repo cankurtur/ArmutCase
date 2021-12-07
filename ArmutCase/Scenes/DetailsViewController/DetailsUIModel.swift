@@ -8,6 +8,7 @@
 import Foundation
 
 struct DetailsUIModel {
+    // MARK: - Properties
     let id: Int
     let serviceID: Int
     let name: String
@@ -17,6 +18,7 @@ struct DetailsUIModel {
     let averageRating: Double
     let completedJobsOnLastMonth: Int
 
+    // MARK: - Initializer
     init(from response: DetailsResponseModel) {
         self.id = response.id
         self.serviceID = response.serviceID

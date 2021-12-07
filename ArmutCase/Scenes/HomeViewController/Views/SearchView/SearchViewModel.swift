@@ -12,6 +12,7 @@ struct SearchViewModel {
     let titleText: String
     let headerImage: UIImage
 
+    // MARK: - Initializer
     init() {
         self.titleText = "Hizmet piş ağzıma düş"
         self.headerImage = .headerImage

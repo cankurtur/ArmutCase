@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct DetailsViewModel {
+class DetailsViewModel {
+    // MARK: - Properties
+    weak var delegate: ServiceErrorDelegate?
     let networking = Networking()
     let workAndInformationViewModel = WorkInformationViewModel.init()
 

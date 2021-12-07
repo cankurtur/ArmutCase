@@ -8,6 +8,11 @@
 import UIKit
 
 class CircleAndLabelView: UIView {
+    // MARK: - Constants
+    private struct Constants {
+        static let borderWidth: CGFloat = 1
+        static let cornerRadius: CGFloat = 44
+    }
     // MARK: - IBOutlets
     @IBOutlet private weak var circleView: UIView!
     @IBOutlet private weak var circleLabel: UILabel!
@@ -32,10 +37,10 @@ class CircleAndLabelView: UIView {
     }
 
     private func setupCircleView() {
-        circleView.layer.borderWidth = 1
+        circleView.layer.borderWidth = Constants.borderWidth
         circleView.layer.borderColor = UIColor.lightGray.cgColor
         circleView.layer.masksToBounds = false
-        circleView.layer.cornerRadius = 44
+        circleView.layer.cornerRadius = Constants.cornerRadius
         circleView.clipsToBounds = true
     }
 

@@ -42,5 +42,4 @@ class SearchView: UIView {
         titleLabel.text = viewModel.titleText
         headerImageView.image = viewModel.headerImage
     }
-
 }

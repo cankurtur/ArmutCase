@@ -10,7 +10,6 @@ import UIKit
 struct HomeViewModel {
     // MARK: - Properties
     let networking = Networking()
-
     let searchViewModel = SearchViewModel()
     let campaignViewModel = CampaignViewModel()
     

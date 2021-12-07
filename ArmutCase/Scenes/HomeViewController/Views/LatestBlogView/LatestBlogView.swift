@@ -9,13 +9,14 @@ import UIKit
 
 class LatestBlogView: UIView {
     // MARK: - Constants
-    struct Constants {
+    private struct Constants {
         static let latestBlogCollectionViewCelldentifier: String = "latestBlogCell"
         static let latestBlogCollectionViewCellNibName: String = "LatestBlogCustomCollectionViewCell"
         static let collectionViewItemSpacing: CGFloat = 30
         static let collectionViewCellWidth: Int = 250
         static let collectionViewCellHeight: Int = 300
     }
+
     // MARK: - IBOutlets
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var latestBlogCollectionView: UICollectionView!
@@ -87,7 +88,6 @@ extension LatestBlogView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let contentArray = contentArray,
               let url = URL(string: contentArray[indexPath.row].link) else { return }
-
-        UIApplication.shared.open(url)
+        model?.openLink(url: url)
     }
 }

@@ -46,7 +46,6 @@ class ImageAndTitleView: UIView {
 
     func configure(viewModel: ImageAndTitleViewModel) {
         self.viewModel = viewModel
-
         serviceImageView.image = viewModel.serviceImage
         serviceTitle.text = viewModel.serviceText
     }

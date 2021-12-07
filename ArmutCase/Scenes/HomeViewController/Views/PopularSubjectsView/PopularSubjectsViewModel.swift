@@ -17,7 +17,6 @@ struct PopularSubjectsViewModel {
     init(servicesUIModel: [ServicesUIModel]) {
         self.servicesUIModel = servicesUIModel
         self.titleText = "Popular these days"
-
         var popularDataArray: [PopularSubjectsDataModel] = []
 
         for service in servicesUIModel {

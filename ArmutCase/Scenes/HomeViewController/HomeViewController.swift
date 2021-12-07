@@ -28,7 +28,6 @@ class HomeViewController: UIViewController {
     // MARK: - Business Logic
     private func setupBindings() {
         configureViews()
-
         viewModel.fetchHomeData { homeUIModel in
             self.configureViewsWithData(model: homeUIModel)
         }
@@ -79,5 +78,4 @@ extension HomeViewController: Presentable {
             navigationController?.pushViewController(detailsVC, animated: true)
         }
     }
-
 }

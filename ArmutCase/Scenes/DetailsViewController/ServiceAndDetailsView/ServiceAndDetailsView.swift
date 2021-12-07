@@ -20,7 +20,7 @@ class ServiceAndDetailsView: UIView {
     @IBOutlet private weak var tableView: UITableView!
 
     // MARK: - Properties
-    var tableViewContents: [IconAndTitleViewModel]?
+    private var tableViewContents: [IconAndTitleViewModel]?
 
     // MARK: - Business Logic
     override init(frame: CGRect) {
@@ -67,6 +67,7 @@ extension ServiceAndDetailsView: UITableViewDelegate, UITableViewDataSource {
               let contents = tableViewContents else {
             return UITableViewCell()
         }
+        
         cell.configure(model: contents[indexPath.row])
         return cell
     }
