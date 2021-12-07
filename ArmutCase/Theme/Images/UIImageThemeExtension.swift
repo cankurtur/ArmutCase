@@ -8,7 +8,9 @@
 import UIKit
 
 extension UIImage {
+
     // MARK: - Properties
+
     static let cleaningIcon = Images.cleaningIcon
     static let dummyImage = Images.dummyImage
     static let fixIcon = Images.fixIcon

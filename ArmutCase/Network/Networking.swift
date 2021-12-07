@@ -5,22 +5,27 @@
 //  Created by Can Kurtur on 4.12.2021.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 protocol ServiceErrorDelegate: AnyObject {
-    func throwEror()
+    func networking(_ networking: Networking, didThrow error: AFError)
 }
 
 /// This class use for network requests
 class Networking {
+
+    //MARK: - Properties
+
     weak var delegate: ServiceErrorDelegate?
+
+    //MARK: - Business Logic
 
     func performRequest<T: Codable>(url: String, completion: @escaping((Result<T, Error>) -> Void)) {
         let url = url
         AF.request(url, method: .get).validate().response { responseData in
             if responseData.error != nil {
-                self.delegate?.throwEror()
+                self.delegate?.networking(self, didThrow: responseData.error!)
                 print(responseData.error)
             } else {
                 do {

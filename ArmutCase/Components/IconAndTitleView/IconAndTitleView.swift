@@ -8,11 +8,14 @@
 import UIKit
 
 class IconAndTitleView: UIView {
+
     // MARK: - IBOutlets
+
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
 
-    // MARK: - Business Logic
+    // MARK: - Setup
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -29,6 +32,8 @@ class IconAndTitleView: UIView {
         addSubview(view)
     }
 
+    // MARK: - Business Logic
+    
     func configure(viewModel: IconAndTitleViewModel) {
         imageView.image = viewModel.icon
         titleLabel.text = viewModel.title

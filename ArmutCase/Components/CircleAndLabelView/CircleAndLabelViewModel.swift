@@ -8,6 +8,9 @@
 import Foundation
 
 struct CircleAndLabelViewModel {
+
+    // MARK: - Properties
+
     let circleNumberText: String
     let stepText: String
 }

@@ -8,20 +8,23 @@
 import UIKit
 
 class CampaignView: UIView {
+
     // MARK: - Constant
+
     private struct Constants {
         static let cornerRadius: CGFloat = 8
     }
 
     // MARK: - IBOutlets
+
     @IBOutlet private weak var campaignImageView: UIImageView!
     @IBOutlet private weak var campaignTitleLabel: UILabel!
     @IBOutlet private weak var campaignOfferLabel: UILabel!
     @IBOutlet private weak var discountView: UIView!
     @IBOutlet private weak var discountLabel: UILabel!
 
- 
-    // MARK: - Business Logic
+    // MARK: - Setup
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -49,6 +52,8 @@ class CampaignView: UIView {
         discountView.layer.cornerRadius = Constants.cornerRadius
         discountView.layer.masksToBounds = true
     }
+
+    // MARK: - Business Logic
 
     func configure(viewModel: CampaignViewModel) {
         campaignImageView.image = viewModel.campaignImage

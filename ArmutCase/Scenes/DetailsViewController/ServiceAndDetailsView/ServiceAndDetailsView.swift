@@ -8,21 +8,26 @@
 import UIKit
 
 class ServiceAndDetailsView: UIView {
+
     // MARK: - Constants
+
     private struct Constants {
         static let tableViewCellIdentifier: String = "customTableViewCell"
         static let tableViewCellNibName: String = "CustomTableViewCell"
     }
 
     // MARK: - IBOutlets
+
     @IBOutlet private weak var imageView: CustomImageView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var tableView: UITableView!
 
     // MARK: - Properties
+
     private var tableViewContents: [IconAndTitleViewModel]?
 
-    // MARK: - Business Logic
+    // MARK: - Setup
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -47,6 +52,8 @@ class ServiceAndDetailsView: UIView {
         tableView.separatorColor = .clear
     }
 
+    // MARK: - Business Logic
+
     func configure(viewModel: ServiceAndDetailsViewModel) {
         imageView.configure(viewModel: viewModel.imageViewModel)
         titleLabel.text = viewModel.titleText
@@ -56,6 +63,7 @@ class ServiceAndDetailsView: UIView {
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
+
 extension ServiceAndDetailsView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableViewContents?.count ?? 0

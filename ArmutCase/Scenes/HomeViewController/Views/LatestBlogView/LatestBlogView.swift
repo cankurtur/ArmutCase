@@ -8,7 +8,9 @@
 import UIKit
 
 class LatestBlogView: UIView {
+
     // MARK: - Constants
+
     private struct Constants {
         static let latestBlogCollectionViewCelldentifier: String = "latestBlogCell"
         static let latestBlogCollectionViewCellNibName: String = "LatestBlogCustomCollectionViewCell"
@@ -18,14 +20,17 @@ class LatestBlogView: UIView {
     }
 
     // MARK: - IBOutlets
+
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var latestBlogCollectionView: UICollectionView!
 
     // MARK: - Properties
+
     private var contentArray: [LatestBlogDataModel]?
     private var model: LatestBlogViewModel?
 
-    // MARK: - Business Logic
+    // MARK: - Setup
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -57,6 +62,8 @@ class LatestBlogView: UIView {
         )
     }
 
+    // MARK: - Business Logic
+
     func configure(viewModel: LatestBlogViewModel) {
         self.model = viewModel
         self.titleLabel.text = viewModel.titleText
@@ -66,6 +73,7 @@ class LatestBlogView: UIView {
 }
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
+
 extension LatestBlogView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return contentArray?.count ?? 0

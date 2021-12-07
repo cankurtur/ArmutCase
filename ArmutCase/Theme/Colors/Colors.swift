@@ -8,7 +8,9 @@
 import UIKit
 
 class Colors {
+
     // MARK: - Properties
+    
     static let almostWhite: UIColor = getColor(colorName: "almostWhite")
     static let campaignGreen: UIColor = getColor(colorName: "campaignGreen")
     

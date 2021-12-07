@@ -8,19 +8,24 @@
 import UIKit
 
 class ImageAndTitleView: UIView {
+
     // MARK: - Constant
+
     private struct Constants {
         static let cornerRadius: CGFloat = 8
     }
 
     // MARK: - IBOutlets
+
     @IBOutlet private weak var serviceImageView: UIImageView!
     @IBOutlet private weak var serviceTitle: UILabel!
  
     // MARK: - Properties
+
     private var viewModel: ImageAndTitleViewModel?
 
-    // MARK: - Business Logic
+    // MARK: - Setup
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -43,6 +48,8 @@ class ImageAndTitleView: UIView {
         layer.cornerRadius = Constants.cornerRadius
         layer.masksToBounds = true
     }
+
+    // MARK: - Business Logic
 
     func configure(viewModel: ImageAndTitleViewModel) {
         self.viewModel = viewModel

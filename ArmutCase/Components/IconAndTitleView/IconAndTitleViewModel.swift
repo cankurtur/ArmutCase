@@ -8,7 +8,9 @@
 import UIKit
 
 struct IconAndTitleViewModel {
+
     // MARK: - Properties
+    
     let icon: UIImage
     let title: String
 }

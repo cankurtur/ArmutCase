@@ -9,16 +9,17 @@
         <!--Home-->
         <scene sceneID="MMn-IV-KA4">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRh-lt-D4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Home" id="1PQ-5l-ptV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="gsX-2y-rEa"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRh-lt-D4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1351" y="426"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="itS-8H-1bb">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2H-MX-gWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="nEo-1s-f3O" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hnd-QO-7PK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -29,7 +30,6 @@
                         <segue destination="1PQ-5l-ptV" kind="relationship" relationship="viewControllers" id="boF-F1-0on"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F2H-MX-gWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-685" y="1"/>
         </scene>

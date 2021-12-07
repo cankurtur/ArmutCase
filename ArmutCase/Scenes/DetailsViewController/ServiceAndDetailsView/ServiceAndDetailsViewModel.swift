@@ -8,13 +8,16 @@
 import Foundation
 
 struct ServiceAndDetailsViewModel {
+
     // MARK: - Properties
+
     let imageViewModel: CustomImageViewModel
     let titleText: String
     let contents: [IconAndTitleViewModel]
     var detailsUIModel: DetailsUIModel
 
     // MARK: - Initializer
+    
     init(detailsUIModel: DetailsUIModel) {
         self.detailsUIModel = detailsUIModel
         self.imageViewModel = CustomImageViewModel(imageLink: detailsUIModel.imageURL)

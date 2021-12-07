@@ -8,17 +8,22 @@
 import UIKit
 
 class CircleAndLabelView: UIView {
+
     // MARK: - Constants
+
     private struct Constants {
         static let borderWidth: CGFloat = 1
         static let cornerRadius: CGFloat = 44
     }
+
     // MARK: - IBOutlets
+
     @IBOutlet private weak var circleView: UIView!
     @IBOutlet private weak var circleLabel: UILabel!
     @IBOutlet private weak var stepLabel: UILabel!
 
-    // MARK: - Business Logic
+    // MARK: - Setup
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -44,6 +49,8 @@ class CircleAndLabelView: UIView {
         circleView.clipsToBounds = true
     }
 
+    // MARK: - Business Logic
+    
     func configure(viewModel: CircleAndLabelViewModel) {
         self.circleLabel.text = viewModel.circleNumberText
         self.stepLabel.text = viewModel.stepText

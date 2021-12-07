@@ -12,22 +12,27 @@ protocol Presentable: AnyObject {
 }
 
 class ServiceAreasView: UIView {
+
     // MARK: - Constants
+
     private struct Constants {
         static let imageAndTitleCollectionViewCellIdentifier: String = "customImageAndTitleCell"
         static let imageAndTitleCollectionViewCellNibName: String = "ImageAndTitleCollectionViewCell"
     }
 
     // MARK: - IBOutlets
+
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var serviceAreasCollectionView: UICollectionView!
 
     // MARK: - Properties
+
     private var elementArray: [ImageAndTitleViewModel]?
     private var model: ServiceAreasViewModel?
     weak var delegate: Presentable?
 
-    // MARK: - Business Logic
+    // MARK: - Setup
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -54,6 +59,8 @@ class ServiceAreasView: UIView {
         )
     }
 
+    // MARK: - Business Logic
+
     func configure(viewModel: ServiceAreasViewModel) {
         titleLabel.text = viewModel.titleText
         elementArray = viewModel.getContents()
@@ -64,6 +71,7 @@ class ServiceAreasView: UIView {
 }
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
+
 extension ServiceAreasView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         elementArray?.count ?? 0

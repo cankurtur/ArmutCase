@@ -8,12 +8,15 @@
 import UIKit
 
 class SearchView: UIView {
+
     // MARK: - IBOutlets
+
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var headerImageView: UIImageView!
     @IBOutlet private weak var searchTextField: UITextField!
 
-    // MARK: - Business Logic
+    // MARK: - Setup
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -32,11 +35,13 @@ class SearchView: UIView {
     }
 
     private func setupSearchTextField() {
-        let leftView = UIView.init(frame: CGRect(x: 0, y: 0, width: 20, height: searchTextField.frame.size.height))
+        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: searchTextField.frame.size.height))
         leftView.backgroundColor = searchTextField.backgroundColor
         searchTextField.leftView = leftView
         searchTextField.leftViewMode = .always
     }
+
+    // MARK: - Business Logic
 
     func configure(viewModel: SearchViewModel) {
         titleLabel.text = viewModel.titleText

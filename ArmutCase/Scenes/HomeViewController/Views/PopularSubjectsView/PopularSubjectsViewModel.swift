@@ -8,20 +8,23 @@
 import UIKit
 
 struct PopularSubjectsViewModel {
+
     // MARK: - Properties
+
     let titleText: String
     let contents: [PopularSubjectsDataModel]
     var servicesUIModel: [ServicesUIModel]
 
     // MARK: - Initializers
+    
     init(servicesUIModel: [ServicesUIModel]) {
         self.servicesUIModel = servicesUIModel
         self.titleText = "Popular these days"
         var popularDataArray: [PopularSubjectsDataModel] = []
 
         for service in servicesUIModel {
-            let popularSubjectDataModel = PopularSubjectsDataModel.init(
-                customImageViewModel: CustomImageViewModel.init(
+            let popularSubjectDataModel = PopularSubjectsDataModel(
+                customImageViewModel: CustomImageViewModel(
                     imageLink: service.imageURL ?? ""
                 ),
                 subjectText: service.name

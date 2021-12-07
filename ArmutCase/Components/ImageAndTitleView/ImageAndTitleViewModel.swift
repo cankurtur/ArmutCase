@@ -8,6 +8,9 @@
 import UIKit
 
 struct ImageAndTitleViewModel {
+    
+    // MARK: - Properties
+
     let serviceImage: UIImage
     let serviceText: String
     let serviceID: Int

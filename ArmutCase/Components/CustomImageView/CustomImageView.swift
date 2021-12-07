@@ -9,7 +9,9 @@ import UIKit
 import Kingfisher
 
 class CustomImageView: UIImageView {
+
     // MARK: - Business Logic
+    
     func configure(viewModel: CustomImageViewModel) {
         image = .dummyImage
         if !viewModel.imageLink.isEmpty {
